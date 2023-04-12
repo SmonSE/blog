@@ -1,0 +1,113 @@
+---
+layout: post
+title: IKEA TRÅDFRI Shortcut Button - Telegram Alarm
+date: 2021-05-05 23:41:39.000000000 +02:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Blog
+- HomeAssistant
+tags:
+- Home Automation
+- IKEA TRADFRI
+- Telegram Bot
+meta:
+  rank_math_seo_score: '85'
+  _edit_last: '1'
+  rank_math_internal_links_processed: '1'
+  rank_math_primary_category: '13'
+  rank_math_focus_keyword: IKEA TRÅDFRI
+  _ez-toc-disabled: ''
+  _ez-toc-insert: ''
+  _ez-toc-heading-levels: a:0:{}
+  _ez-toc-alttext: ''
+  _ez-toc-exclude: ''
+  rank_math_og_content_image: a:2:{s:5:"check";s:32:"04400f80db0c0f6dc30bc16f335c1642";s:6:"images";a:1:{i:0;i:509;}}
+author:
+  login: smon
+  email: simon_eisele@web.de
+  display_name: Simon Eisele
+  first_name: Simon
+  last_name: Eisele
+permalink: "/2021/05/05/ikea-tradfri-telegram/"
+---
+<p><!-- wp:heading --></p>
+<h2><strong>Home Assistant Einstellungen zum senden einer Telegram Nachricht durch drücken des Ikea Shortcut Knopfes</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Mit der IKEA Tradfri&nbsp;Serie hat es das schwedische Unternehmen in den Smart Home-Markt geschafft. Damit ist es für jedermann auf einfachste Weise möglich Lampen, Steckdose, Rollos oder Lautsprecher via App zu steuern oder sogar zu automatisieren. Laut Ikea ist die aktuellen Serie auch noch nicht am Ende seiner Entwicklung und wird stetig weiterentwickelt. Das Home Smart System soll im kommenden Jahr noch durch weitere Produkte ergänzt werden. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3><strong>Was benötige ich alles für den Shortcut Button Telegram Alarm</strong></h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li><a href="https://www.ikea.com/de/de/p/tradfri-gateway-weiss-40337806/" class="rank-math-link">IKEA TRÅDFRI Gateway</a></li>
+<li><a href="https://www.ikea.com/de/de/p/tradfri-shortcut-button-weiss-40356381/" class="rank-math-link">IKEA TRÅDFRI Shortcut-Button</a></li>
+<li>Raspberry Pi 4 mit Zubehör</li>
+<li><a href="https://www.home-assistant.io/installation/raspberrypi" class="rank-math-link">Home Assistant Operating System</a></li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3><strong>Raspberry Pi einrichten</strong></h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Wie man die SD Karte mit dem Home Assistant Operating System flashed findet man <a href="https://www.home-assistant.io/installation/raspberrypi" class="rank-math-link">hier</a>.<br />Nachdem die SD Karte geflashed, eingesteckt und der Raspberry Pi angeschaltet ist sollte die <a href="http://homeassistant.local:8123" class="rank-math-link">Weboberfläche</a> des Home Assistant nach wenigen Minuten erreichbar sein. Das Einrichten und eine kurze Einleitung ist <a href="https://www.home-assistant.io/getting-started/onboarding/" class="rank-math-link">hier</a> zu finden.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3><strong>IKEA TRÅDFRI und Shortcut-Button einrichten</strong></h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Das einrichten des IKEA Gateways und Shortcut-Buttons findet man im Netz und auf der <a href="https://www.ikea.com/at/de/customer-service/product-support/smart-lighting/app_gateway-pub8ba3ca96" class="rank-math-link">Ikea Homepage</a> zu genüge dadurch werde ich nicht genauer darauf eingehen. Falls Nachfragen bestehen dann einfach in die Kommentare schreiben. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3><strong>Einrichten von Telegram unter Home Assistant</strong></h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Um den Telegram Messenger in den Home Assistant einzubinden muss ein File auf dem Raspberry Pi angepasst werden. Das Anpassen des Files ist deutlich einfacher wenn man das <a href="https://www.home-assistant.io/getting-started/configuration/" class="rank-math-link">Add-On</a> "File Editor" installiert. Anschließend muss im "/config" Ordner die "configuration.yaml" Datei angepasst werden. Nach dem Anpassen einfach Speichern drücken. Wie man an den <a href="https://sendpulse.com/knowledge-base/chatbot/create-telegram-chatbot" class="rank-math-link">API_KEY</a> und die eigene Chat ID kommt findet man hier.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:code --></p>
+<pre class="wp-block-code"><code lang="yaml" class="language-yaml"># Beispiel configuration.yaml für den Telegram Bot
+telegram_bot:
+  - platform: polling 
+    api_key: INSERTKEYHERE
+    allowed_chat_ids: 
+      - FIRSTCHATID 
+      - SECONDCHATID 
+
+# Beispiel configuration.yaml für den zu Benachrichtigten
+notify:
+   - name: SE_Message
+     platform: telegram
+     chat_id: FIRSTCHATID
+
+# Wenn benötigt für den zweiten zu Benachrichtigten
+   - name: ME_Message
+     platform: telegram
+     chat_id: SECONDCHATID </code></pre>
+<p><!-- /wp:code --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3><strong>Home Assistant Automatisierung</strong></h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Unter Einstellungen -&gt; Automatisierungen kann mittels "+ Automatisierung hinzufügen" eine neue Automation hinzugefügt werden. Einfach auf "Erstellen" und beim nächsten Fenster auf "Überspringen" drücken. Die einstellungen die ich Vorgenommen habe sind auf den nachfolgenden Bildern am besten zu sehen. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"id":509,"width":512,"height":338,"sizeSlug":"large","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-large is-resized"><img src="{{ site.baseurl }}/assets/2021/05/Bildschirmfoto-2021-05-05-um-23.03.26-1024x675.png" alt="IKEA TRÅDFRI Setup<br />
+" class="wp-image-509" width="512" height="338" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:image {"id":510,"width":512,"height":456,"sizeSlug":"large","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-large is-resized"><img src="{{ site.baseurl }}/assets/2021/05/Bildschirmfoto-2021-05-05-um-23.03.57-1024x912.png" alt="IKEA TRÅDFRI Setup" class="wp-image-510" width="512" height="456" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:image {"id":511,"width":512,"height":460,"sizeSlug":"large","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-large is-resized"><img src="{{ site.baseurl }}/assets/2021/05/Bildschirmfoto-2021-05-05-um-23.04.31-1024x919.png" alt="IKEA TRÅDFRI Setup" class="wp-image-511" width="512" height="460" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>Jetzt nur noch speichern und nach dem drücken sollten die ersten Nachrichten aufm dem Handy eintreffen. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Nachträglich eine Anleitung zu schreiben ist immer schwer weil man meistens doch noch etwas vergisst zu notieren. Im falle von Fehlenden Informationen einfach eine Nachricht schreiben, ich versuche sie dann so schnell es geht zu beantworten. Vielleicht finde ich noch eine Möglichkeit einer Home Assistant <a href="https://affengriff.net/2021/02/11/scriptable-widgets/" class="rank-math-link">Widget</a> Darstellung via Scriptable.</p>
+<p><!-- /wp:paragraph --></p>

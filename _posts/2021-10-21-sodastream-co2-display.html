@@ -1,0 +1,191 @@
+---
+layout: post
+title: Easy SodaStream Co2 Display
+date: 2021-10-21 22:59:07.000000000 +02:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Blog
+- Projekte
+tags:
+- 3D Printer
+- Co2 Zylinder
+- ESP8266
+- Oled Display
+- ProgressBar
+- Prusa Slicer
+- SodaStream
+- SodaStream Display
+- Tinkercad
+- Ultimaker Cura
+- Wemos D1 mini
+meta:
+  rank_math_seo_score: '83'
+  _edit_last: '1'
+  _ez-toc-disabled: ''
+  _ez-toc-insert: ''
+  _ez-toc-heading-levels: a:1:{i:2;i:2;}
+  _ez-toc-alttext: ''
+  _ez-toc-exclude: ''
+  rank_math_internal_links_processed: '1'
+  rank_math_focus_keyword: SodaStream
+  rank_math_primary_category: '13'
+  rank_math_og_content_image: a:2:{s:5:"check";s:32:"26dfb1e99bf5bde758482f9a7e52eaa7";s:6:"images";a:1:{i:0;s:71:"https://affengriff.net/wp-content/uploads/2021/10/IMG_8606-768x1024.jpg";}}
+author:
+  login: smon
+  email: simon_eisele@web.de
+  display_name: Simon Eisele
+  first_name: Simon
+  last_name: Eisele
+permalink: "/2021/10/21/sodastream-co2-display/"
+---
+<p><!-- wp:heading --></p>
+<h2><strong>Short description</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:media-text {"mediaPosition":"right","mediaId":594,"mediaLink":"https://affengriff.net/?attachment_id=594","mediaType":"image","mediaWidth":33} --></p>
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile" style="grid-template-columns:auto 33%">
+<figure class="wp-block-media-text__media"><img src="{{ site.baseurl }}/assets/2021/10/IMG_8606-768x1024.jpg" alt="SodaStream Oled Display" class="wp-image-594 size-full" /></figure>
+<div class="wp-block-media-text__content"><!-- wp:paragraph --></p>
+<p>Everyone who owns a SodaStream has probably asked themselves how full my CO2 cylinder is. In most cases the cylinder is empty once you have been shopping. Most SodaStream users have a second cylinder, but it still sparked my creativity to come up with a simple solution.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>The small software program is currently used to determine the number of impacts pressed and shown on the display (line 2). In line 3 is the added time of the duration / length of the pushed pushes. These values can be used to roughly estimate how much Co2 is still in the cylinder. What is shown graphically in line 4 by means of a progress indicator.</p>
+<p><!-- /wp:paragraph --></div>
+</div>
+<p><!-- /wp:media-text --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Hardware required</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>Wemos D1 mini (ESP8266)</li>
+<li>Limit switch Ender 3 Pro </li>
+<li>OLED Display I2C 0,96 Zoll </li>
+<li>Cable / single wires</li>
+<li>3D Printer + Filament</li>
+<li>Soldering iron with equipment</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Software required</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>Arduino IDE</li>
+<li>Tinkercad</li>
+<li>Ultimaker Cura / Prusa Slicer</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>3D Printer settings</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:media-text {"mediaId":565,"mediaLink":"https://affengriff.net/?attachment_id=565#main","mediaType":"image","mediaWidth":30} --></p>
+<div class="wp-block-media-text alignwide is-stacked-on-mobile" style="grid-template-columns:30% auto">
+<figure class="wp-block-media-text__media"><img src="{{ site.baseurl }}/assets/2021/10/IMG_8147.jpg" alt="Ender 3 Pro" class="wp-image-565 size-full" /></figure>
+<div class="wp-block-media-text__content"><!-- wp:paragraph --></p>
+<p><strong>Print Settings</strong></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>Printer brand: <a href="https://www.creality3dshop.de" target="_blank" data-type="URL" data-id="https://www.creality3dshop.de" rel="noreferrer noopener">Creality</a></li>
+<li>Printer: Ender 3&nbsp;Pro</li>
+<li>Infill: 20%</li>
+<li>Filament brand: <a href="https://www.amazon.de/s?keywords=Filament-3D-Druckmaterialien&amp;i=industrial&amp;rh=n%3A6589299031%2Cp_89%3AAmazon+Basics&amp;dc&amp;_encoding=UTF8&amp;c=ts&amp;qid=1631212845&amp;rnid=669059031&amp;ts_id=6589299031&amp;ref=sr_nr_p_89_1" target="_blank" data-type="URL" data-id="https://www.amazon.de/s?keywords=Filament-3D-Druckmaterialien&amp;i=industrial&amp;rh=n%3A6589299031%2Cp_89%3AAmazon+Basics&amp;dc&amp;_encoding=UTF8&amp;c=ts&amp;qid=1631212845&amp;rnid=669059031&amp;ts_id=6589299031&amp;ref=sr_nr_p_89_1" rel="noreferrer noopener">Amazon Basics 3D-Drucker-Filament</a></li>
+<li>Filament color: black</li>
+<li>Filament material: PLA</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:paragraph --></p>
+<p><!-- /wp:paragraph --></div>
+</div>
+<p><!-- /wp:media-text --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>3D Printer Tinkercad STL File</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:image {"id":595,"width":476,"height":424,"sizeSlug":"large","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-large is-resized"><img src="{{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-21-um-22.30.34-1024x914.png" alt="Tinkercad SodaStream " class="wp-image-595" width="476" height="424" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Arduino IDE Software Code</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>I have to adapt to publish (currently code excerpt).</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:code --></p>
+<pre class="wp-block-code"><code lang="cpp" class="language-cpp">#include &lt;SPI.h&gt;
+#include &lt;Wire.h&gt;
+#include &lt;Adafruit_GFX.h&gt;
+#include &lt;Adafruit_SSD1306.h&gt;
+#include &lt;ESP8266WiFi.h&gt;
+
+#define SCREEN_WIDTH 128 // display width, (pixels)
+#define SCREEN_HEIGHT 64 // display height, (pixels)
+
+// I2C connected display SSD1306 
+#define OLED_RESET     0 // Reset pin # (or -1 if sharing Arduino reset pin)
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &amp;Wire, OLED_RESET);
+
+#define NUMFLAKES     10 // Number of snowflakes in the animation example
+
+#define LOGO_HEIGHT   16
+#define LOGO_WIDTH    16
+static const unsigned char PROGMEM logo_bmp[] =
+{ B00000000, B11000000,
+  B00000001, B11000000,
+  B00000001, B11000000,
+  B00000011, B11100000,
+  B11110011, B11100000,
+  B11111110, B11111000,
+  B01111110, B11111111,
+  B00110011, B10011111,
+  B00011111, B11111100,
+  B00001101, B01110000,
+  B00011011, B10100000,
+  B00111111, B11100000,
+  B00111111, B11110000,
+  B01111100, B11110000,
+  B01110000, B01110000,
+  B00000000, B00110000 };</code></pre>
+<p><!-- /wp:code --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Result Pictures</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:gallery {"ids":[597,598,599,600,601,602],"linkTo":"none"} --></p>
+<figure class="wp-block-gallery columns-3 is-cropped">
+<ul class="blocks-gallery-grid">
+<li class="blocks-gallery-item">
+<figure><img src="{{ site.baseurl }}/assets/2021/10/IMG_8601-768x1024.jpg" alt="" data-id="597" data-link="https://affengriff.net/?attachment_id=597#main" class="wp-image-597" /></figure>
+</li>
+<li class="blocks-gallery-item">
+<figure><img src="{{ site.baseurl }}/assets/2021/10/IMG_8600-1-768x1024.jpg" alt="" data-id="598" data-link="https://affengriff.net/?attachment_id=598#main" class="wp-image-598" /></figure>
+</li>
+<li class="blocks-gallery-item">
+<figure><img src="{{ site.baseurl }}/assets/2021/10/IMG_8602-768x1024.jpg" alt="" data-id="599" data-link="https://affengriff.net/?attachment_id=599#main" class="wp-image-599" /></figure>
+</li>
+<li class="blocks-gallery-item">
+<figure><img src="{{ site.baseurl }}/assets/2021/10/IMG_8603-1-768x1024.jpg" alt="" data-id="600" data-link="https://affengriff.net/?attachment_id=600#main" class="wp-image-600" /></figure>
+</li>
+<li class="blocks-gallery-item">
+<figure><img src="{{ site.baseurl }}/assets/2021/10/IMG_8605-2-1-768x1024.jpg" alt="" data-id="601" data-link="https://affengriff.net/?attachment_id=601#main" class="wp-image-601" /></figure>
+</li>
+<li class="blocks-gallery-item">
+<figure><img src="{{ site.baseurl }}/assets/2021/10/IMG_8606-1-768x1024.jpg" alt="" data-id="602" data-full-url="https://affengriff.net/wp-content/uploads/2021/10/IMG_8606-1-scaled.jpg" data-link="https://affengriff.net/?attachment_id=602#main" class="wp-image-602" /></figure>
+</li>
+</ul>
+</figure>
+<p><!-- /wp:gallery --></p>
+<p><!-- wp:heading --></p>
+<h2>ToDo</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>Wemos D1 Mini ESP.deepSleep</li>
+<li>One Case for alle the stuff</li>
+<li>Smaler Display Case </li>
+<li>Battery shield + display battery status </li>
+<li>Change Wemos D1 Mini to ESP8266 BLE + IOS App</li>
+</ul>
+<p><!-- /wp:list --></p>

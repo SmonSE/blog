@@ -1,0 +1,148 @@
+---
+layout: post
+title: Cheap Arduino Nano v3 - Relais control via GUI
+date: 2021-09-19 20:51:12.000000000 +02:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Blog
+- Projekte
+tags:
+- 3D Printer
+- Arduino
+- Arduino IDE
+- Arduino Nano
+- Arduino Relais
+- Creality
+- Ender 3 Pro
+- Processing IDE
+- Relais
+- Schematics
+- Tinkercad
+meta:
+  rank_math_seo_score: '82'
+  _edit_last: '1'
+  _ez-toc-disabled: ''
+  _ez-toc-insert: ''
+  _ez-toc-heading-levels: a:1:{i:3;i:3;}
+  _ez-toc-alttext: ''
+  _ez-toc-exclude: ''
+  rank_math_internal_links_processed: '1'
+  rank_math_primary_category: '13'
+  rank_math_focus_keyword: Arduino Nano
+  _wp_old_slug: cheap-arduino-nano-v3-relais-control-via-gui
+  rank_math_og_content_image: a:2:{s:5:"check";s:32:"b612d75c5a4c45bf5002876ab9aae40a";s:6:"images";a:1:{i:0;i:547;}}
+author:
+  login: smon
+  email: simon_eisele@web.de
+  display_name: Simon Eisele
+  first_name: Simon
+  last_name: Eisele
+permalink: "/2021/09/19/arduino-relais-control/"
+---
+<p><!-- wp:heading --></p>
+<h2><strong>Control of a relay module using an Arduino Nano v3</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Since I have to reset my work hardware or switch the voltage several times a day from home office, I built a small circuit from an old Arduino Nano v3 and a relay module that enables me to do this. Since I found it awkward to start the relay every time via the Arduino IDE with the serial monitor, I also wrote a GUI that can be executed using JAVA JDK for easy handling.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3><strong>Hardware required</strong></h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>Arduino Nano v3</li>
+<li>Relais Modul</li>
+<li>RGB LED (not needed)</li>
+<li>Single Wires</li>
+<li>Solder stuff</li>
+<li><a href="https://www.tinkercad.com/things/5TZT1Vlvi8K" target="_blank" rel="noreferrer noopener">3D Printed case</a></li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3><strong>Schematics</strong></h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:image {"id":547,"sizeSlug":"large","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-large"><img src="{{ site.baseurl }}/assets/2021/09/Bildschirmfoto-2021-09-08-um-22.38.10-1024x773.png" alt="Tinkercad circuits Arduino Nano" class="wp-image-547" title="Tinkercad circuits" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3><strong>Code</strong></h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Code for Arduino IDE which worked with the attached GUI.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:code --></p>
+<pre class="wp-block-code"><code lang="c" class="language-c">#define LEDR 8     // red
+#define LEDG 9     // green
+#define LEDB 10    // blue
+#define RELAIS 11  // relais
+
+void setup() {
+
+  // set LED's pin to output mode
+  pinMode(LEDR, OUTPUT);
+  pinMode(LEDG, OUTPUT);
+  pinMode(LEDB, OUTPUT);
+  pinMode(RELAIS, OUTPUT);
+  
+  Serial.begin(9600);          //start serial communication @9600 bps
+}
+
+void loop(){
+  
+  if(Serial.available()){      //id data is available to read
+
+    char val = Serial.read();
+
+    if(val == 'b'){             //if b received
+      digitalWrite(11, HIGH);   //turn on relais
+      digitalWrite(10, HIGH);   //turn on green led
+    }
+    if(val == 'f'){            //if f received
+      digitalWrite(11, LOW);    //turn off all led
+      digitalWrite(10, LOW);
+    }      
+  }
+}</code></pre>
+<p><!-- /wp:code --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3><strong>Processing IDE GUI for MacOS</strong></h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>With Processing IDE it is easy to create a JAVA GUI for Arduino which is running on MAC OS X and Windows. The only think what you have to install additional is the latest JAVA SDK.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"id":562,"width":256,"height":255,"sizeSlug":"full","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-full is-resized"><img src="{{ site.baseurl }}/assets/2021/09/Bildschirmfoto-2021-09-09-um-17.07.28.png" alt="" class="wp-image-562" width="256" height="255" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3><strong>3D Printer Settings</strong></h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:media-text {"mediaId":565,"mediaLink":"https://affengriff.net/?attachment_id=565#main","mediaType":"image","mediaWidth":30} --></p>
+<div class="wp-block-media-text alignwide is-stacked-on-mobile" style="grid-template-columns:30% auto">
+<figure class="wp-block-media-text__media"><img src="{{ site.baseurl }}/assets/2021/09/IMG_8147.jpg" alt="" class="wp-image-565 size-full" /></figure>
+<div class="wp-block-media-text__content"><!-- wp:paragraph --></p>
+<p><strong>Print Settings</strong></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>Printer brand: <a href="https://www.creality3dshop.de" target="_blank" data-type="URL" data-id="https://www.creality3dshop.de" rel="noreferrer noopener">Creality</a></li>
+<li>Printer: Ender 3&nbsp;Pro</li>
+<li>Infill:100</li>
+<li>Filament brand: <a href="https://www.amazon.de/s?keywords=Filament-3D-Druckmaterialien&amp;i=industrial&amp;rh=n%3A6589299031%2Cp_89%3AAmazon+Basics&amp;dc&amp;_encoding=UTF8&amp;c=ts&amp;qid=1631212845&amp;rnid=669059031&amp;ts_id=6589299031&amp;ref=sr_nr_p_89_1" target="_blank" data-type="URL" data-id="https://www.amazon.de/s?keywords=Filament-3D-Druckmaterialien&amp;i=industrial&amp;rh=n%3A6589299031%2Cp_89%3AAmazon+Basics&amp;dc&amp;_encoding=UTF8&amp;c=ts&amp;qid=1631212845&amp;rnid=669059031&amp;ts_id=6589299031&amp;ref=sr_nr_p_89_1" rel="noreferrer noopener">Amazon Basics 3D-Drucker-Filament</a></li>
+<li>Filament color: black</li>
+<li>Filament material: PLA</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:paragraph --></p>
+<p><!-- /wp:paragraph --></div>
+</div>
+<p><!-- /wp:media-text --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3><strong>Result </strong></h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:image {"id":556,"width":300,"sizeSlug":"large","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-large is-resized"><img src="{{ site.baseurl }}/assets/2021/09/IMG_8139-768x1024.jpg" alt="" class="wp-image-556" width="300" /></figure>
+<p><!-- /wp:image --></p>

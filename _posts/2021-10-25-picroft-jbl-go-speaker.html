@@ -1,0 +1,95 @@
+---
+layout: post
+title: Awesome PiCroft  Setup with "JBL Go 1" Bluetooth Audio Speaker
+date: 2021-10-25 21:39:01.000000000 +02:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Projekte
+tags:
+- Bluetooth Audio
+- JBL GO
+- MyCroft
+- PiCroft
+- Voice Assistant
+meta:
+  rank_math_seo_score: '82'
+  _edit_last: '1'
+  _ez-toc-disabled: ''
+  _ez-toc-insert: ''
+  _ez-toc-heading-levels: a:1:{i:2;i:2;}
+  _ez-toc-alttext: ''
+  _ez-toc-exclude: ''
+  rank_math_internal_links_processed: '1'
+  rank_math_primary_category: '15'
+  rank_math_focus_keyword: PiCroft
+  rank_math_og_content_image: a:2:{s:5:"check";s:32:"52cd3a82956a25755377df9110143104";s:6:"images";a:1:{i:0;s:71:"https://affengriff.net/wp-content/uploads/2021/10/IMG_8659-1024x768.jpg";}}
+author:
+  login: smon
+  email: simon_eisele@web.de
+  display_name: Simon Eisele
+  first_name: Simon
+  last_name: Eisele
+permalink: "/2021/10/25/picroft-jbl-go-speaker/"
+---
+<p><!-- wp:paragraph --></p>
+<p><a href="https://mycroft.ai" target="_blank" rel="noreferrer noopener">Mycroft</a> / PiCroft is an open source voice assistant.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Hardware required</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>Raspberry Pi</li>
+<li>Display (in my case 5"Display)</li>
+<li>JBL GO Bluetooth Speaker</li>
+<li>Keyboard for setup </li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>PiCroft first setup </strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:image {"id":626,"width":427,"height":320,"sizeSlug":"large","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-large is-resized"><img src="{{ site.baseurl }}/assets/2021/10/IMG_8659-1024x768.jpg" alt="PiCroft Setup" class="wp-image-626" width="427" height="320" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Connect JBL Go Bluetooth speaker</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Install Pulseaudio-module-bluetooth</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:code --></p>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">sudo apt-get install pulseaudio-module-bluetooth</code></pre>
+<p><!-- /wp:code --></p>
+<p><!-- wp:paragraph --></p>
+<p>Setup for setting bluetooth connection every startup at:  /sudo nano /etc/rc.local</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:code --></p>
+<pre class="wp-block-code"><code class=""># Connect Bluetooth Speaker JBL Go
+printf "### Connect Bluetooth Speaker ###"
+echo "power on \nagent on \ndefault-agent \nconnect XX:XX:XX:XX:XX:XX \nquit" | bluetoothctl
+</code></pre>
+<p><!-- /wp:code --></p>
+<p><!-- wp:paragraph --></p>
+<p>This file needs to be edited at to get audio output: sudo nano /etc/mycroft/mycroft.conf</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:code --></p>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">{
+  "play_wav_cmdline": "aplay %1",
+  "play_mp3_cmdline": "mpg123 %1",
+  [...]
+}</code></pre>
+<p><!-- /wp:code --></p>
+<p><!-- wp:paragraph --></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><!-- /wp:paragraph --></p>

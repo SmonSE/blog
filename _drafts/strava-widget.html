@@ -1,0 +1,115 @@
+---
+layout: post
+title: Strava Widget
+date:
+type: post
+parent_id: '0'
+published: false
+password: ''
+status: draft
+categories:
+- Blog
+- Projekte
+tags:
+- iPhone Widget
+- Scriptable
+- Scriptable Widget
+- Strava
+- Strava Widget
+meta:
+  rank_math_seo_score: '83'
+  _edit_last: '1'
+  rank_math_internal_links_processed: '1'
+  rank_math_primary_category: '13'
+  rank_math_focus_keyword: Strava Widget
+  enclosure: |
+    https://affengriff.net/wp-content/uploads/2021/04/RPReplay_Final1617712924.mov
+    2202419
+    video/quicktime
+  rank_math_analytic_object_id: '1'
+  _ez-toc-disabled: ''
+  _ez-toc-insert: ''
+  _ez-toc-heading-levels: a:0:{}
+  _ez-toc-alttext: ''
+  _ez-toc-exclude: ''
+author:
+  login: smon
+  email: simon_eisele@web.de
+  display_name: Simon Eisele
+  first_name: Simon
+  last_name: Eisele
+permalink: "/"
+---
+<p><!-- wp:heading --></p>
+<h2><strong>Das Scriptable Widgets für eine schnelle Strava Übersicht </strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Mit dem Scriptable Strava Widget können die letzten Trainingsdaten sowie eine Übersicht über den letzten Monat abgerufen werden anhand der User-ID oder dem User-Name. Das Strava Widget funktioniert <strong>nicht für Profi Athleten</strong> da diese eine komplett andere Darstellung und Auflistung haben.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"id":492,"width":503,"height":264,"sizeSlug":"large","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-large is-resized"><img src="{{ site.baseurl }}/assets/strava_komoot.png" alt="Strava Widget" class="wp-image-492" width="503" height="264" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>Eine nette Funktion ist das Scrollen durch die Trainingseinheiten von Freunden wie im angehängten <a href="https://affengriff.net/wp-content/uploads/2021/04/RPReplay_Final1617712924.mov" class="rank-math-link">Video</a> zu sehen ist. Dazu müssen lediglich mehrere Strava-Widgets einrichtet und übereinander geschoben werden.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Das ganze ist ohne den Zugriff auf die verfügbare Strava API umgesetzt. Um das ganze über die Strave API zu realisieren müsste sich jeder der dieses Strava Widget nutzen möchte den Developer Modus aktivieren und seinen token im zur verfügung gestellten Code ändern. Eigentlich würde ich mir wünschen das Strava selber auf die Idee kommt ein Widget für iPhone anzubieten. Aber die Wahrscheinlichkeit das sie ihre Seite so umbauen das mein Widget nicht mehr funktioniert wird größer sein.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Aktuell ist es möglich die Daten direkt aus dem HTML code zu beziehen, was aber nur funktioniert wenn der Strava Account öffentlich gemacht ist. Ja ich weiß das wollen viele natürlich nicht, aber wenn man sein Profil schlank hält und nicht alle Informationen ausgefüllt (nur Vorname), sollte der Switch auf ein öffentliches Profil auch nicht schlimm sein. Es gibt das eine Tolle Funktion in den Einstellungen, die Private-Zone aktivieren heißt, damit kann man seinen heimischen Startpunkt bis zu einem Radius von 1km in der Map ausblenden. Wenn man sein Strave Profil neu erstellt ist es sowieso erstmal auf "öffentlich" gestellt.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Den <strong>User-Name</strong> welcher auch geändert werden kann, findet man relativ einfach im Browser unter:<br />Mein Profil -&gt; Persönliche URL <br /><strong>Example:</strong> https://www.strava.com/athletes/<strong>your_defined_name</strong></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Die <strong>User-ID</strong> findet man in der Browser URL nachdem man sein Profil ausgewählt hat.<br /><strong>Example:</strong> https://www.strava.com/athletes/<strong>1234567</strong></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Aktuell befinden sich noch ein paar bugs in der Darstellung sobald jemand händisch eine Trainingseinheit einträgt, da diese auf der Webseite anders dargestellt werden. Eventuell werde ich anstelle des falschen Kontent's einfach nichts anzeigen. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Das gleiche Widget auch für Komoot</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Strava Widget Quellcode zur Benutzung kann hier heruntergeladen werden: https://github.com/SmonSE/Strava/blob/main/strava-widget.js</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Komoot Widget Quellcode zur Benutzung kann hier heruntergeladen werden: https://github.com/SmonSE/Komoot/blob/main/komoot-widget.js</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Wie man Scriptable-Widget dem Home-Screen hinzufügt</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Egal, für welches Widget Sie sich entschieden haben, das Einstellungsprozedere in iOS ist immer das gleiche:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list {"ordered":true} --></p>
+<ol id="block-95125681-a11c-4762-a5c2-16a5785879a4">
+<li>Fügen Sie zunächst den kopierten Code einem neuen Script hinzu.</li>
+<li>Mit einem Tipp auf das Regler-Icon ganz unten in der linken Ecke des Bildschirmes können Sie das Script aussagekräftig benennen und ein passendes Icon (Glyph) dafür auswählen.</li>
+<li>Danach wechseln Sie in den Widget-Bildschirm, indem Sie in Ihren Home-Bildschirmen so lang wie möglich nach links scrollen.</li>
+<li>Tippen und halten Sie in diesem Bildschirm so lang, bis die voreingestellten Widgets beginnen zu wackeln. Sie sind nun im Bearbeitungs-Modus. Tippen Sie in diesem Modus auf das Plus-Zeichen in der oberen linken Ecke und scrollen Sie in der erscheinenden Liste bis zu "Scriptable".</li>
+<li>Hier können Sie noch das Aussehen auswählen (kleines Widget) und das Widget hinzufügen.</li>
+<li>Tippen Sie nochmals auf das Scriptable-Widget, solange die Icons wackeln. Drücken Sie auf Widget bearbeiten. Hier bekommen Sie die Möglichkeit, das passende Script auszuwählen. Unter dem Feld Parameter müssen Sie die User ID eingeben. (Beispiel: <strong>12345678</strong>).</li>
+<li>Tippen Sie hierzu auf "Auswählen" in der Zeile "Script", die App wird Ihnen alle bisher erstellten Scripts einblenden, die sich nun auswählen lassen. Ziehen Sie das Widget anschließend auf eine Stelle im Bildschirm Ihrer Wahl und beenden Sie den Bearbeitungsmodus.</li>
+</ol>
+<p><!-- /wp:list --></p>
+<p><!-- wp:table --></p>
+<figure class="wp-block-table">
+<table />
+<tbody>
+<tr>
+<td><strong>Todo List:</strong></td>
+</tr>
+</tbody>
+<p>- Wrong content if training entered by hand</figure>
+<p><!-- /wp:table --></p>
+<p><!-- wp:table --></p>
+<figure class="wp-block-table">
+<table />
+<tbody>
+<tr>
+<td><strong>Changelog of Strava Widget:</strong></td>
+</tr>
+</tbody>
+<p>v1.0.4 - Adding Bike or Run<br />v1.0.3 - Adding Last Ride Date to widget<br />v1.0.2 - Detect "Umlaute" in &lt;title&gt; and replace<br />v1.0.1 - Bugfix of athleteName, delete non letters<br />v1.0.0 - Initial release</figure>
+<p><!-- /wp:table --></p>

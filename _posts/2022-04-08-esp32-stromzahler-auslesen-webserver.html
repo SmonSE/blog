@@ -1,0 +1,229 @@
+---
+layout: post
+title: ESP32 - Digitaler Stromzähler auslesen WebServer
+date: 2022-04-08 12:42:59.000000000 +02:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Blog
+- Projekte
+tags:
+- 3D Printer
+- Digitaler Stromzähler
+- ESP32
+- Strom sparen
+- Stromzähler auslesen
+- TCRT5000
+- Tinkercad
+- WeMosD1
+meta:
+  rank_math_seo_score: '88'
+  rank_math_primary_category: '13'
+  _edit_last: '1'
+  _ez-toc-disabled: ''
+  _ez-toc-insert: ''
+  _ez-toc-heading-levels: a:0:{}
+  _ez-toc-alttext: ''
+  _ez-toc-exclude: ''
+  rank_math_internal_links_processed: '1'
+  rank_math_focus_keyword: ESP32
+  rank_math_contentai_score: a:5:{s:9:"wordCount";s:3:"100";s:9:"linkCount";s:1:"0";s:12:"headingCount";s:3:"100";s:10:"mediaCount";s:5:"62.22";s:8:"keywords";s:5:"74.51";}
+  rank_math_og_content_image: a:2:{s:5:"check";s:32:"5b1a2014c08effd9ff07277a5091b395";s:6:"images";a:1:{i:0;i:1047;}}
+author:
+  login: smon
+  email: simon_eisele@web.de
+  display_name: Simon Eisele
+  first_name: Simon
+  last_name: Eisele
+permalink: "/2022/04/08/esp32-stromzahler-auslesen-webserver/"
+---
+<p><!-- wp:paragraph --></p>
+<p>Mit der Hilfe eines ESP32 und eines einfachen IR Moduls kann am Stromzähler der aktuelle Stromverbrauch ausgelesen werden <strong>ohne</strong> das man den Stromzähler PIN benötigt. Mittels einem WebServer der vom ESP32 aufgebaut wird kann der aktuelle Verbrauch ausgelesen und grafisch dargestellt werden.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Da nicht jeder das Know-how bzw. die Lust hat sich einen kompletten HomeAssistant einzurichten um den Energieverbrauch auszulesen habe ich mir eine Standalone Lösung überlegt. Dadurch werden auch die Kosten der Anschaffung stark minimiert. Die Kosten für das benötigte Material belaufen sich auf unter 15€ (je nach Bauteile / Hersteller). </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><a href="https://affengriff.net/2022/08/01/esp32-stromzaehler-arduino-cloud/" target="_blank" rel="noreferrer noopener">Alternative Lösung</a> via Arduino IoT Remote App (nur ein File zu flashen). </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Wer eine Home Assistant am laufen hat kann sich gerne meine Hassio Lösung anschauen, <a href="https://affengriff.net/wp-admin/post.php?post=634&amp;action=edit">hier</a>.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Digitaler Stromzähler Standalone WebServer</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:image {"id":1047,"width":547,"height":433,"sizeSlug":"large","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-large is-resized"><img src="{{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-08-um-12.38.45-1024x810.png" alt="" class="wp-image-1047" width="547" height="433" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Benötigte Hardware</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>ESP32-WROOM-32 D1 mini (AZ-Delivery)</li>
+<li><a href="https://www.amazon.de/AZDelivery-TRCT5000-Infrarot-Hindernis-Vermeidung/dp/B07DRCKV3X/ref=sr_1_2_sspa?__mk_de_DE=ÅMÅŽÕÑ&amp;dchild=1&amp;keywords=TCRT5000&amp;qid=1635199629&amp;sr=8-2-spons&amp;psc=1&amp;smid=A1X7QLRQH87QA3&amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFQTFpMMFZCM0wyV1AmZW5jcnlwdGVkSWQ9QTAxMDUwNjMxOU1NMlZLVllIUU9FJmVuY3J5cHRlZEFkSWQ9QTA5Njk5MjFKNERJWDlPNUxENk8md2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl" target="_blank" rel="noreferrer noopener">IR Modul</a>&nbsp;(TCRT5000)&nbsp;</li>
+<li>3D Drucker + Filament</li>
+<li>Lötstation mit Equipment</li>
+<li>Einzeladern</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Benötigte Software</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li><a href="https://www.tinkercad.com" target="_blank" rel="noreferrer noopener">TinkerCad</a></li>
+<li><a href="https://www.prusa3d.de" target="_blank" rel="noreferrer noopener">PrusaSlicer</a></li>
+<li>Arduino IDE</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Aufbau Gehäuse</strong> </h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:gallery {"linkTo":"none"} --></p>
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":1020,"sizeSlug":"large","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-large"><img src="{{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-07-um-08.52.41.png" alt="" class="wp-image-1020" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:image {"id":1023,"sizeSlug":"large","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-large"><img src="{{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-07-um-08.56.10.png" alt="" class="wp-image-1023" /></figure>
+<p><!-- /wp:image --></figure>
+<p><!-- /wp:gallery --></p>
+<p><!-- wp:paragraph --></p>
+<p>Das neue Zählergehäuse findet man <a href="https://www.tinkercad.com/things/gfMDpMCaC8Z" target="_blank" rel="noreferrer noopener">hier</a>.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>IR Modul TCRT5000 modifikation</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:media-text {"mediaId":771,"mediaLink":"https://affengriff.net/2021/10/26/esp8266-stromzahler-auslesen/bildschirmfoto-2022-01-07-um-21-30-02/","mediaType":"image","mediaWidth":20} --></p>
+<div class="wp-block-media-text alignwide is-stacked-on-mobile" style="grid-template-columns:20% auto">
+<figure class="wp-block-media-text__media"><img src="{{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-01-07-um-21.30.02-610x1024.png" alt="" class="wp-image-771 size-full" /></figure>
+<div class="wp-block-media-text__content"><!-- wp:paragraph {"placeholder":"Content…"} --></p>
+<p>Auf dem TCRT5000 befindet sich eine Lesediode und eine Schreibdiode. Die Schreibdiode wird auch als Näherungssensor verwendet wodurch es zu Problemen kommen kann beim Ablesen des Stromzählers. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph {"placeholder":"Content…"} --></p>
+<p>In meinem Fall habe ich die hellere (weiße Diode) einfach ausgelötet. In anderen Beiträgen habe ich gesehen, dass auch nur der Vorwiderstand entfernt wird. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph {"placeholder":"Content…"} --></p>
+<p>Den TCRT5000 habe ich am ESP32 an die Pins G14, 5V und GND angeschlossen.</p>
+<p><!-- /wp:paragraph --></div>
+</div>
+<p><!-- /wp:media-text --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>eHz Elektronischer Haushaltszähler</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:media-text {"mediaId":1045,"mediaLink":"https://affengriff.net/?attachment_id=1045#main","mediaType":"image","mediaWidth":21} --></p>
+<div class="wp-block-media-text alignwide is-stacked-on-mobile" style="grid-template-columns:21% auto">
+<figure class="wp-block-media-text__media"><img src="{{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-08-um-12.13.14-659x1024.png" alt="" class="wp-image-1045 size-full" /></figure>
+<div class="wp-block-media-text__content"><!-- wp:paragraph {"placeholder":"Content…"} --></p>
+<p>Das Gehäuse aus dem 3D Drucker passt beim eHz Elektronischen Haushaltszähler. Mit zwei Magneten wird das Gehäuse am Zähler befestigt da der Stromzähler Eigentum des Netzbetreibers ist! </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Die rechten beiden IR Dioden werden beim IR Lese-Schreibekopf verwendet (<a href="https://www.volkszaehler.org" target="_blank" rel="noreferrer noopener">Volkszähler</a>). Dabei wird permanent zwischen den Unterschiedlichen zur verfügung stehenden Zählerständen geschalten und diese ausgelesen (PIN muss beim jeweiligen Energiekonzern angefragt werden).</p>
+<p><!-- /wp:paragraph --></div>
+</div>
+<p><!-- /wp:media-text --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Zähler Aufsteckmodul ESP32 + TCRT5000</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:gallery {"linkTo":"none"} --></p>
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":1037,"sizeSlug":"large","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-large"><img src="{{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-08-um-07.56.57-722x1024.png" alt="" class="wp-image-1037" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:image {"id":1036,"sizeSlug":"large","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-large"><img src="{{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-08-um-07.57.09-713x1024.png" alt="" class="wp-image-1036" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:image {"id":1038,"sizeSlug":"large","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-large"><img src="{{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-08-um-07.57.25-674x1024.png" alt="" class="wp-image-1038" /></figure>
+<p><!-- /wp:image --></figure>
+<p><!-- /wp:gallery --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Einrichten des WebServers</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Der Wemos D1 mini ESP32 generiert zu Beginn sein eigenes WLAN (SSID = StromZaehler). Wenn man dieses auswählt kann man über die statische IP: 192.168.4.1 den Wi-Fi Manager öffnen um dort von seinem eigene Heimnetz die SSID und das Passwort zu hinterlegen. Das Gateway (Router IP) muss angegeben werden da sonst Zeit und Datum nicht mit dem NTP Server abgeglichen werden können. Bei einem nicht funktionierenden NTP Server werden die Werte um Mitternacht nicht zurückgesetzt. Die Daten sind direkt auf dem ESP32 im Filessystem hinterlegt und können nicht nach außen gelangen.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:media-text {"mediaId":1012,"mediaLink":"https://affengriff.net/?attachment_id=1012","mediaType":"image","mediaWidth":56} --></p>
+<div class="wp-block-media-text alignwide is-stacked-on-mobile" style="grid-template-columns:56% auto">
+<figure class="wp-block-media-text__media"><img src="{{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-06-um-14.06.08-1024x737.png" alt="" class="wp-image-1012 size-full" /></figure>
+<div class="wp-block-media-text__content"><!-- wp:paragraph --></p>
+<p>SSID: Wlan Name</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Password: Wlan Passwort</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>IP Adresse: WebServer IP</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Gateway Adresse: Router IP</p>
+<p><!-- /wp:paragraph --></div>
+</div>
+<p><!-- /wp:media-text --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>WebServer grafische Darstellung</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Den WebServer mit der Sensor Auswertung erreicht man dann über die im Wi-Fi Manager konfigurierten </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"id":1002,"sizeSlug":"large","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-large"><img src="{{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-06-um-13.25.18-1024x512.png" alt="WebServer on ESP32<br />
+" class="wp-image-1002" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Stromversorgung ESP32</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Man kann den ESP32 auch mit einer Powerbank betreiben. Dabei muss man aber bedenken das durch den WebServer (permanentes WiFi) der Stromverbrauch sehr hoch ist. Da meine Lösung ja nur zum aktuellen Energieverbrauch messen gedacht ist bzw. um zu schauen was man so über einen kompletten Tag verbraucht, reicht eine Powerbank aus.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Wer die Energiewerte dauerhaft auslesen möchte sollte sich dann doch lieber eine Schuko Steckdose in den Verteilerkasten montieren lassen.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Software</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Der ESP32 enthält ein File System (SPIFFS). SPIFFS ist ein kleines Dateisystem, das für Mikrocontroller mit einem Flash-Chip entwickelt wurde die über einen SPI-Bus verfügen. Unter <a href="https://randomnerdtutorials.com/install-esp32-filesystem-uploader-arduino-ide/" target="_blank" rel="noreferrer noopener">dieser </a><a href="https://randomnerdtutorials.com/esp32-plot-readings-charts-multiple/" target="_blank" rel="noreferrer noopener">Seite</a> kann man die genaue Anleitung finden und wie man dieses File System einrichtet. Anstelle des Temperatursensoren muss man nur den TCRT5000 anlöten sowie minimale Anpassungen an der Software vornehmen. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Code</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:code --></p>
+<pre class="wp-block-code"><code lang="cpp" class="language-cpp">/* Sensor TCRT5000 PIN14*/
+const int digital_pin = 14;
+int state = 0;
+int laststate = 1;
+unsigned int counter = 0;
+
+......
+
+/* Loop sensor reading*/
+void loop() {
+
+  state=digitalRead(digital_pin);
+  if ( laststate == 1 &amp;&amp; state == 0 )
+  {
+    counter++;
+  }
+  
+  laststate = state;
+  watt = counter * 6;
+}</code></pre>
+<p><!-- /wp:code --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Fazit</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Mit der Energieverbrauch Messung kann man sehr schnell sehen wo sich die Stromfresser im Haushalt befinden. Wir haben bei der letzten Messung herausgefunden, dass der SAECO Kaffeevollautomat im eingeschalteten Zustand während dem Frühstück 400W zieht. Das liegt an dem permanent aktiven Heizelement. Der Standby Timer lag bei 30 Minuten was zu einem hohen Stromverbrauch in der Zeit führt, dafür das kein Kaffee gemacht wird. Wir haben den Timer auf das minimalsten Wert gesetzt bzw. machen den Vollautomaten direkt nach der Benutzung aus.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Es wird ja immer von Standby Geräten bzw. Netzteilstecker gesprochen die sich permanent am Strom befinden. Jedoch kann ich hier keinen erhöhten Energieverbrauch feststellen. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Was hier am meisten Sinn macht und zu einer erstaunliche Einsparung führt ist das Balkonkraftwerk. Daher sieht man in den Grafiken des öfteren das Der Stromzähler Watt Wert Null beträgt.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>Das Projekt befindet sich noch in der Entwicklung, bei weiteren Fragen einfach schreiben.</strong></p>
+<p><!-- /wp:paragraph --></p>

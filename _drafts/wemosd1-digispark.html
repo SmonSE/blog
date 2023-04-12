@@ -1,0 +1,128 @@
+---
+layout: post
+title: WeMosD1 mit power bank betreiben dank Digispark rev3
+date:
+type: post
+parent_id: '0'
+published: false
+password: ''
+status: draft
+categories:
+- Blog
+- HomeAssistant
+tags: []
+meta:
+  rank_math_seo_score: '86'
+  _edit_last: '1'
+  _ez-toc-disabled: ''
+  _ez-toc-insert: ''
+  _ez-toc-heading-levels: a:0:{}
+  _ez-toc-alttext: ''
+  _ez-toc-exclude: ''
+  rank_math_internal_links_processed: '1'
+  rank_math_focus_keyword: WeMosD1
+  rank_math_primary_category: '13'
+author:
+  login: smon
+  email: simon_eisele@web.de
+  display_name: Simon Eisele
+  first_name: Simon
+  last_name: Eisele
+permalink: "/"
+---
+<p><!-- wp:paragraph --></p>
+<p>Nachdem ich feststellen musste, dass meine Power Bank beim Betrieb eines WeMosD1 oder Nodemcuv2 nach ca. 10 sec <a href="https://affengriff.net/2021/10/21/sodastream-co2-display/" target="_blank" data-type="URL" data-id="https://affengriff.net/2021/10/21/sodastream-co2-display/" rel="noreferrer noopener">abschaltet</a>, hatte ich die Motivation mir etwas einfallen lassen. Im Internet findet man einige Schaltungen zu dem Thema, jedoch hatte ich keine Lust, mir so viele Bauteile zu bestellen. Da ich noch einen Digispark Rev3 USB Mikrokontroller rumliegen hatte probierte ich verschiedene Setups aus. Das Ergebnis zeige ich hier in meinem Blog Post.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Ich bin noch am überlegen ob ich das WLAN in den DeepSleep Mode setze und der DigiSpark mir den WeMosD1 oder NodemcuV2 wieder aufweckt nach einer gewissen Zeit. Dadurch würde ich wieder einiges an Stromverbrauch sparen. Dafür müsste ich dann aber den Mikrokontroller alle 15 Sekunden aus dem DeepSleep holen damit die Stromaufnahme wieder über den 100mA liegen. Ich werde weiter experimentieren und berichten.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading --></p>
+<h2 id="benotigte-hardware"><strong>Benötigte Hardware</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>Power Bank 10400mAh</li>
+<li><a href="https://www.amazon.de/AZDelivery-Digispark-kompatibles-Development-ATtiny85/dp/B076KVKHH1/ref=sr_1_1_sspa?keywords=digispark+rev.3&amp;qid=1642596716&amp;sprefix=digispark+%2Caps%2C87&amp;sr=8-1-spons&amp;psc=1&amp;smid=A1X7QLRQH87QA3&amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyQ1lNQ0tIRFBPWjg4JmVuY3J5cHRlZElkPUEwMzMzNTYzMzVMNTNRNVBOWko3WCZlbmNyeXB0ZWRBZElkPUEwMjg3NzkyMjFKSUVPRktCMlFMVCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=" target="_blank" data-type="URL" data-id="https://www.amazon.de/AZDelivery-Digispark-kompatibles-Development-ATtiny85/dp/B076KVKHH1/ref=sr_1_1_sspa?keywords=digispark+rev.3&amp;qid=1642596716&amp;sprefix=digispark+%2Caps%2C87&amp;sr=8-1-spons&amp;psc=1&amp;smid=A1X7QLRQH87QA3&amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyQ1lNQ0tIRFBPWjg4JmVuY3J5cHRlZElkPUEwMzMzNTYzMzVMNTNRNVBOWko3WCZlbmNyeXB0ZWRBZElkPUEwMjg3NzkyMjFKSUVPRktCMlFMVCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=" rel="noreferrer noopener">Digispark Rev.3</a> </li>
+<li>USB Micro Kabel</li>
+<li>3D Gehäuse</li>
+<li>Kabelbinder</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading --></p>
+<h2 id="benotigte-software"><strong>Benötigte Software</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>Arduino IDE </li>
+<li>ATTinyCore library </li>
+<li>PrusaSlicer</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading --></p>
+<h2 id="3d-gehause-tinkercad">3D<strong> Gehäuse Tinkercad</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li><a href="https://www.tinkercad.com/things/4DyUJEDHzki" target="_blank" data-type="URL" data-id="https://www.tinkercad.com/things/4DyUJEDHzki" rel="noreferrer noopener">Digispark rev.3 Case</a></li>
+<li>Bald auch auf Thingiverse</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading --></p>
+<h2 id="aufbau-digispark-wemosd1-adapter"><strong>Aufbau Digispark WeMosD1 Adapter</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:gallery {"linkTo":"none"} --></p>
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":876,"sizeSlug":"large","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-large"><img src="{{ site.baseurl }}/assets/Bildschirmfoto-2022-01-20-um-08.26.18-1024x968.png" alt="" class="wp-image-876" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:image {"id":871,"sizeSlug":"large","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-large"><img src="{{ site.baseurl }}/assets/Bildschirmfoto-2022-01-19-um-14.04.16-1024x707.png" alt="" class="wp-image-871" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:image {"id":870,"sizeSlug":"large","linkDestination":"none"} --></p>
+<figure class="wp-block-image size-large"><img src="{{ site.baseurl }}/assets/Bildschirmfoto-2022-01-19-um-14.03.58-1024x892.png" alt="" class="wp-image-870" /></figure>
+<p><!-- /wp:image --></figure>
+<p><!-- /wp:gallery --></p>
+<p><!-- wp:paragraph --></p>
+<p>Die meisten Power Banks benötigen einen Zyklischen Strom von 100mA alle 15 Sekunden für eine Dauer von ca. 2 Sekunden. Mit der Kombination aus Digispark und einem WeMos D1 komme ich auf einen Stromverbrauch von 101mA und wenn die LED Zyklisch geschalten wird 104mA für die 2 Sekunden. Natürlich sind 100mA bei einer Power Bank schon viel als Permanent Strom aber es ist eine sehr einfache Lösung.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:media-text {"mediaId":877,"mediaLink":"https://affengriff.net/?attachment_id=877#main","mediaType":"image","mediaWidth":36} --></p>
+<div class="wp-block-media-text alignwide is-stacked-on-mobile" style="grid-template-columns:36% auto">
+<figure class="wp-block-media-text__media"><img src="{{ site.baseurl }}/assets/Bildschirmfoto-2022-01-20-um-08.54.57-1024x702.png" alt="Digispark WeMosD1" class="wp-image-877 size-full" /></figure>
+<div class="wp-block-media-text__content"><!-- wp:paragraph {"placeholder":"Content…"} --></p>
+<p>LG Akku:       10400mAh<br />WeMosD1:           80mA<br />DigiSpark:            25mA</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Akkulaufzeit:    ah / a x 60<br />Minuten:   10.4Ah / 0.104A x 60 = 6000 min<br />Stunden:  10.4Ah / 0.104A = 100 Stunden<br />Tage:        10.4Ah / 0.104A / 24 = 4,16 Tage</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>4 Tage sind leider verdammt wenig! Kommt natürlich auch auf das Projekt an.</p>
+<p><!-- /wp:paragraph --></div>
+</div>
+<p><!-- /wp:media-text --></p>
+<p><!-- wp:heading --></p>
+<h2 id="code"><strong>Code</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:code --></p>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">// KEEP POWERBANK ALIVE
+
+int led = 1;
+
+void setup() {
+  pinMode(led, OUTPUT);     // red LED for debug blink
+}
+ 
+void loop() {
+  digitalWrite(led, HIGH);   
+  delay(1500);             // led ON timer            
+  digitalWrite(led, LOW); 
+  delay(14000);            // led OFF timer
+}</code></pre>
+<p><!-- /wp:code --></p>
+<p><!-- wp:paragraph --></p>
+<p>Mit einem WeMosD1 mini und dem DigiSpark liegt man knapp unter den 100mA was dazu führt das die Power Bank abschaltet. Mit dem Code Schnipsel wird die LED Zyklisch geschalten was zu einer Stromaufnahme knapp über 100mA führt.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading --></p>
+<h2 id="hinweis"><strong>Hinweis</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Natürlich übernehme ich keinerlei Haftung dafür was mit eurer Power Bank passiert da es da auch einige schwarze Schafe gibt. Ich habe auch schon eine Power Bank auf Amazon gesehen die diese Abschaltung nicht besitzt. Da es aber lediglich zwei Mikrokontroller sind die betrieben werden sollte eigentlich nichts passieren. Trotzdem sind Power Banks nicht aus dauerhafte Stromquelle geeignet / vorgesehen. </p>
+<p><!-- /wp:paragraph --></p>

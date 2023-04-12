@@ -1,0 +1,132 @@
+---
+layout: post
+title: Easy use of WordPress as a data source
+date: 2021-03-22 10:28:18.000000000 +01:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Blog
+- Projekte
+tags:
+- data base
+- data source
+- json reader
+- php script
+- Scriptable
+- Scriptable Widget
+- Wordpress data source
+- Wordpress json
+- Wordpress Plugin
+meta:
+  rank_math_seo_score: '83'
+  _edit_last: '1'
+  rank_math_internal_links_processed: '1'
+  rank_math_primary_category: '13'
+  rank_math_focus_keyword: WordPress
+  rank_math_analytic_object_id: '5'
+  _wp_old_slug: wordpress-data-source
+  _ez-toc-disabled: ''
+  _ez-toc-insert: ''
+  _ez-toc-heading-levels: a:0:{}
+  _ez-toc-alttext: ''
+  _ez-toc-exclude: ''
+author:
+  login: smon
+  email: simon_eisele@web.de
+  display_name: Simon Eisele
+  first_name: Simon
+  last_name: Eisele
+permalink: "/2021/03/22/wordpress-data-source-easy/"
+---
+<p><!-- wp:heading --></p>
+<h2><strong>WordPress as a data source with .json for Scriptable IOS App</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Creating a WordPress site is no longer a specialty with the provided themes. The idea of using WordPress not only as a standard website, but also as a data source / database can be implemented by using a two-line PHP script. We need this script to upload a .json file in WP under media which is normally blocked.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:code --></p>
+<pre class="wp-block-code"><code lang="php" class="language-php">&lt;?php
+function cc_mime_types($mimes) {
+    $mimes['json'] = 'application/json';
+    $mimes['svg'] = 'image/svg+xml';
+
+    return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');</code></pre>
+<p><!-- /wp:code --></p>
+<p><!-- wp:paragraph --></p>
+<p><a href="https://github.com/SmonSE/englishForIT/blob/main/wpJson.zip">https://github.com/SmonSE/englishForIT/blob/main/wpJson.zip</a></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Installation of your own WordPress plugin</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>After creating the plugin (ZIP file which includes the php script) it can be installed via the dashboard.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list {"ordered":true} --></p>
+<ol>
+<li>First click on &gt; <strong>Plugins</strong> &gt; <strong>Add new</strong>.</li>
+<li>Then click on the “<strong>Upload plugin</strong>” button at the top.</li>
+<li>Now select the ZIP file and confirm the “<strong>Install now</strong>” button.</li>
+<li>After the file has been uploaded, you can activate the plugin.</li>
+</ol>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Create your own .json file</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Code excerpt from the json file.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:code --></p>
+<pre class="wp-block-code"><code lang="json" class="language-json">// example
+{
+  "englishIt": "Vocabulary for IT english",
+  "createdAt":"2021-03-18 11:43:00.000000",
+  "vocabulary":[
+    {
+      "pos:": "000",
+      "english": "Avatar",
+      "german": "Benutzerbild",
+      "meaning": "An icon or figure that represents .... ."
+    },
+    {
+      "pos:": "001",
+      "english": "Bug",
+      "german": "Fehler",
+      "meaning": "A defect or fault in a program ... ."
+    }
+  ]
+}</code></pre>
+<p><!-- /wp:code --></p>
+<p><!-- wp:heading --></p>
+<h2><strong>Get data source by Scriptable Widget</strong></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p><a href="https://affengriff.net/2021/02/11/scriptable-widgets/" class="rank-math-link">Collecting data</a> source from .json file which is uploaded on Wordpress media.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:code --></p>
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript">// example
+async function getNewCasesData(){
+  let url = "https://../../../englishForItVocs.json";
+  let req = new Request(url);
+  let apiResult = await req.loadJSON();
+
+return apiResult;
+}</code></pre>
+<p><!-- /wp:code --></p>
+<p><!-- wp:paragraph --></p>
+<p>Read out values from .json file. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:code --></p>
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript">// example
+async function createWidget() {
+  const list = new ListWidget();
+  const vocEng = list.addText(apiData.vocs[0].english);
+  const meaning = list.addText(apiData.vocs[0].meaning);
+
+return list;
+}</code></pre>
+<p><!-- /wp:code --></p>
