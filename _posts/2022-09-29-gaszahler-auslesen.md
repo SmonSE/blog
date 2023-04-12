@@ -40,7 +40,7 @@ Mit der Hilfe eines Aqara Tür und Fenster Sensors ( Reed Kontakt Sensor ) kann 
 * <a href="https://www.amazon.de/Aqara-MCCGQ11LM-Window-Sensor-Fensterssensor/dp/B07D37VDM3" target="_blank" rel="noreferrer noopener">Aqara Tür- und Fenstersensor</a>
 * <a href="https://affengriff.net/category/3d-prints/" target="_blank" rel="noreferrer noopener">3D Drucker&nbsp;</a>
 * Gaszähler G4 RF1
-* Zigbee USB Stick (ConBee2 || SkyConnect)
+* Zigbee USB Stick (ConBee2 oder SkyConnect)
 
 
 ## Benötigte Software
