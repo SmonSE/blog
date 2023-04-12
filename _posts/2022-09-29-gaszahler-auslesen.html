@@ -119,15 +119,15 @@ permalink: "/2022/09/29/gaszahler-auslesen/"
 <h2><strong>Hassio configuration.yaml</strong></h2>
 <p><!-- /wp:heading --></p>
 <p><!-- wp:code --></p>
-<pre class="wp-block-code"><code># GASTZÄHLER      
+<pre class="wp-block-code"><code># GASTZÄHLER
 counter:
     gaszaehler:
       initial: 0
       step: 1
-      icon: mdi:meter-gas-outline 
+      icon: mdi:meter-gas-outline
 # CAN ALSO BE ADDED TO Automation.yaml
 automation:
-# COUNTER INCREMENT 
+# COUNTER INCREMENT
 - id: '1664298491581'
   alias: increaseCounter
   description: ''
@@ -161,8 +161,8 @@ automation:
     data: {}
     target:
       entity_id: counter.gaszaehler
-  mode: single 
-# VIRTUAL SENSOR 
+  mode: single
+# VIRTUAL SENSOR
 template:
   - sensor:
       - name: "Gaszaehler_m3"
