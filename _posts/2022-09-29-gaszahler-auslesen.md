@@ -29,12 +29,7 @@ meta:
   _ez-toc-alttext: ''
   _ez-toc-exclude: ''
   rank_math_og_content_image: a:2:{s:5:"check";s:32:"71e1396acab23de82471974d4e82f373";s:6:"images";a:1:{i:0;s:71:"https://affengriff.net/wp-content/uploads/2022/09/IMG_1410-768x1024.jpg";}}
-author:
-  login: smon
-  email: simon_eisele@web.de
-  display_name: Simon Eisele
-  first_name: Simon
-  last_name: Eisele
+author: Smon
 permalink: "/2022/09/29/gaszahler-auslesen/"
 ---
 
@@ -45,7 +40,7 @@ Mit der Hilfe eines Aqara Tür und Fenster Sensors ( Reed Kontakt Sensor ) kann 
 * <a href="https://www.amazon.de/Aqara-MCCGQ11LM-Window-Sensor-Fensterssensor/dp/B07D37VDM3" target="_blank" rel="noreferrer noopener">Aqara Tür- und Fenstersensor</a>
 * <a href="https://affengriff.net/category/3d-prints/" target="_blank" rel="noreferrer noopener">3D Drucker&nbsp;</a>
 * Gaszähler G4 RF1
-* Zigbee USB Stick (ConBee2 <strong>||</strong> SkyConnect)
+* Zigbee USB Stick (ConBee2 || SkyConnect)
 
 
 ## Benötigte Software
@@ -79,7 +74,8 @@ Der Magnet befindet sich hinter der ersten roten Zahl nach dem Komma ( 1imp = 0.
 
 ## Hassio configuration.yaml
 
-```yml
+{% highlight yaml %}
+{% raw %}
 # GASTZÄHLER
 counter:
     gaszaehler:
@@ -102,7 +98,7 @@ automation:
       hours: 0
       minutes: 0
       seconds: 0
-  condition: &#91;]
+  condition: []
   action:
   - service: counter.increment
     data: {}
@@ -116,7 +112,7 @@ automation:
   trigger:
   - platform: time
     at: 00:00:00
-  condition: &#91;]
+  condition: []
   action:
   - service: counter.reset
     data: {}
@@ -130,7 +126,7 @@ template:
         unit_of_measurement: "m³"
         device_class: energy
         state_class: total_increasing
-        state: &gt;
+        state: >
           {% set gas = states('counter.gaszaehler') | int %}
           {{ ((gas) * 0.1) | round(1, default=0) }}
   - sensor:
@@ -138,12 +134,13 @@ template:
         unit_of_measurement: "kWh"
         device_class: energy
         state_class: total_increasing
-        state: &gt;
+        state: >
           {% set kwh = states('sensor.gaszaehler_m3') | float %}
           {{ ((kwh) * 10.5) | round(1, default=0) }}
 # 10.5 NEEDS TO BE CHECKED AT YOUR GAS INVOICE ( Z-ZAHL )
 # 11.404 Laut meiner Rechnung der Stadtwerke!
-```
+{% endraw %}
+{% endhighlight %}
 
 ## Home Assistant grafische Darstellung
 
