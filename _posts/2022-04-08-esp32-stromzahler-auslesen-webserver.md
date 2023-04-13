@@ -34,7 +34,9 @@ Wer eine Home Assistant am laufen hat kann sich gerne meine Hassio Lösung ansch
 **Digitaler Stromzähler Standalone WebServer**
 ----------------------------------------------
 
-![]({{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-08-um-12.38.45-1024x810.png)
+<!-- ![]({{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-08-um-12.38.45-1024x810.png) -->
+<img src="/assets/2022/04/Bildschirmfoto-2022-04-08-um-12.38.45-1024x810.png" width="60%" height="60%">
+
 
 **Benötigte Hardware**
 ----------------------
@@ -55,16 +57,15 @@ Wer eine Home Assistant am laufen hat kann sich gerne meine Hassio Lösung ansch
 **Aufbau Gehäuse**
 ------------------
 
-![]({{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-07-um-08.52.41.png)
-
-![]({{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-07-um-08.56.10.png)
+![]({{ site.baseurl }}/assets/2023/04/2023-04-13 14.01.15.png)
 
 Das neue Zählergehäuse findet man [hier](https://www.tinkercad.com/things/gfMDpMCaC8Z).
 
 **IR Modul TCRT5000 modifikation**
 ----------------------------------
 
-![]({{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-01-07-um-21.30.02-610x1024.png)
+<!-- ![]({{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-01-07-um-21.30.02-610x1024.png) -->
+<img src="Bildschirmfoto-2022-01-07-um-21.30.02-610x1024.png" width="60%" height="60%">
 
 Auf dem TCRT5000 befindet sich eine Lesediode und eine Schreibdiode. Die Schreibdiode wird auch als Näherungssensor verwendet wodurch es zu Problemen kommen kann beim Ablesen des Stromzählers.
 
@@ -75,7 +76,8 @@ Den TCRT5000 habe ich am ESP32 an die Pins G14, 5V und GND angeschlossen.
 **eHz Elektronischer Haushaltszähler**
 --------------------------------------
 
-![]({{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-08-um-12.13.14-659x1024.png)
+<!-- ![]({{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-08-um-12.13.14-659x1024.png) -->
+<img src="/assets/2022/04/Bildschirmfoto-2022-04-08-um-12.13.14-659x1024.png" width="60%" height="60%">
 
 Das Gehäuse aus dem 3D Drucker passt beim eHz Elektronischen Haushaltszähler. Mit zwei Magneten wird das Gehäuse am Zähler befestigt da der Stromzähler Eigentum des Netzbetreibers ist!
 
@@ -84,18 +86,15 @@ Die rechten beiden IR Dioden werden beim IR Lese-Schreibekopf verwendet ([Volksz
 **Zähler Aufsteckmodul ESP32 + TCRT5000**
 -----------------------------------------
 
-![]({{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-08-um-07.56.57-722x1024.png)
-
-![]({{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-08-um-07.57.09-713x1024.png)
-
-![]({{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-08-um-07.57.25-674x1024.png)
+![ESP32]({{ site.baseurl }}/assets/2023/04/2023-04-13 14.00.56.png)
 
 **Einrichten des WebServers**
 -----------------------------
 
 Der Wemos D1 mini ESP32 generiert zu Beginn sein eigenes WLAN (SSID = StromZaehler). Wenn man dieses auswählt kann man über die statische IP: 192.168.4.1 den Wi-Fi Manager öffnen um dort von seinem eigene Heimnetz die SSID und das Passwort zu hinterlegen. Das Gateway (Router IP) muss angegeben werden da sonst Zeit und Datum nicht mit dem NTP Server abgeglichen werden können. Bei einem nicht funktionierenden NTP Server werden die Werte um Mitternacht nicht zurückgesetzt. Die Daten sind direkt auf dem ESP32 im Filessystem hinterlegt und können nicht nach außen gelangen.
 
-![]({{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-06-um-14.06.08-1024x737.png)
+<!-- ![]({{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-06-um-14.06.08-1024x737.png) -->
+<img src="/assets/2022/04/Bildschirmfoto-2022-04-06-um-14.06.08-1024x737.png" width="60%" height="60%">
 
 SSID: Wlan Name
 
@@ -110,8 +109,8 @@ Gateway Adresse: Router IP
 
 Den WebServer mit der Sensor Auswertung erreicht man dann über die im Wi-Fi Manager konfigurierten
 
-![WebServer on ESP32<br />
-]({{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-06-um-13.25.18-1024x512.png)
+<!-- ![WebServer]({{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-06-um-13.25.18-1024x512.png) -->
+<img src="/assets/2022/04/Bildschirmfoto-2022-04-06-um-13.25.18-1024x512.png" width="60%" height="60%">
 
 **Stromversorgung ESP32**
 -------------------------
