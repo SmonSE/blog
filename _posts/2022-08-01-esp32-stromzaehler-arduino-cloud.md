@@ -49,13 +49,8 @@ Die Werte sind so niedrig da mein Solarkraftwerk zu dem Zeitpunkt Strom generier
 
 **Aufbau Gehäuse**
 ------------------
-<!-- ![]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-04-07-um-08.52.16.png)
-![]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-04-07-um-08.52.41.png) -->
 
-<p float="left">
-    <img src="/assets/2022/08/Bildschirmfoto-2022-04-07-um-08.52.16.png" width="40%" height="40%">
-    <img src="/assets/2022/08/Bildschirmfoto-2022-04-07-um-08.52.41.png" width="40%" height="40%">
-</p>
+![]({{ site.baseurl }}/assets/2023/04/2023-04-13 14.01.15.png)
 
 Das neue Zählergehäuse findet man [hier](https://www.tinkercad.com/things/gfMDpMCaC8Z).
 
@@ -84,15 +79,7 @@ Die rechten beiden IR Dioden werden beim IR Lese-Schreibekopf verwendet ([Volksz
 **Zähler Aufsteckmodul ESP32 + TCRT5000**
 -----------------------------------------
 
-<!-- ![Case open]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-04-08-um-07.56.57.png)
-![ESP32 + TCRT5000]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-04-08-um-07.57.09.png)
-![Case closed]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-04-08-um-07.57.25.png) -->
-
-<p float="left">
-    <img src="/assets/2022/08/Bildschirmfoto-2022-04-08-um-07.56.57.png" width="30%" height="30%">
-    <img src="/assets/2022/08/Bildschirmfoto-2022-04-08-um-07.57.09.png" width="30%" height="28%">
-    <img src="/assets/2022/08/Bildschirmfoto-2022-04-08-um-07.57.25.png" width="30%" height="25%">
-</p>
+![ESP32]({{ site.baseurl }}/assets/2023/04/2023-04-13 14.00.56.png)
 
 **Einrichten von Arduino IoT Cloud Remote**
 -------------------------------------------
@@ -224,5 +211,5 @@ Damit wir später an der Handy App das Diagramm zu sehen bekommen müssen wir un
 **Handy IoT Remote App**
 ------------------------
 
-![]({{ site.baseurl }}/assets/2022/08/IMG_0842.jpg)
+<!-- ![]({{ site.baseurl }}/assets/2022/08/IMG_0842.jpg) -->
 <img src="/assets/2022/08/IMG_0842.jpg" width="70%" height="70%">
