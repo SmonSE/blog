@@ -42,7 +42,8 @@ Since I have to reset my work hardware or switch the voltage several times a day
 
 ### **Schematics**
 
-![Tinkercad circuits Arduino Nano]({{ site.baseurl }}/assets/2021/09/Bildschirmfoto-2021-09-08-um-22.38.10-1024x773.png "Tinkercad circuits")
+<!-- ![Tinkercad]({{ site.baseurl }}/assets/2021/09/Bildschirmfoto-2021-09-08-um-22.38.10-1024x773.png "Tinkercad circuits") -->
+<img src="/assets/2021/09/Bildschirmfoto-2021-09-08-um-22.38.10-1024x773.png" width="60%" height="60%">
 
 ### **Code**
 
@@ -85,11 +86,13 @@ Code for Arduino IDE which worked with the attached GUI.
 
 With Processing IDE it is easy to create a JAVA GUI for Arduino which is running on MAC OS X and Windows. The only think what you have to install additional is the latest JAVA SDK.
 
-![]({{ site.baseurl }}/assets/2021/09/Bildschirmfoto-2021-09-09-um-17.07.28.png)
+<!-- ![]({{ site.baseurl }}/assets/2021/09/Bildschirmfoto-2021-09-09-um-17.07.28.png) -->
+<img src="/assets/2021/09/Bildschirmfoto-2021-09-09-um-17.07.28.png" width="60%" height="60%">
 
 ### **3D Printer Settings**
 
-![]({{ site.baseurl }}/assets/2021/09/IMG_8147.jpg)
+<!-- ![]({{ site.baseurl }}/assets/2021/09/IMG_8147.jpg) -->
+<img src="/assets/2021/09/IMG_8147.jpg" width="60%" height="60%">
 
 **Print Settings**
 
@@ -102,4 +105,5 @@ With Processing IDE it is easy to create a JAVA GUI for Arduino which is running
 
 ### **Result**
 
-![]({{ site.baseurl }}/assets/2021/09/IMG_8139-768x1024.jpg)
+<!-- ![]({{ site.baseurl }}/assets/2021/09/IMG_8139-768x1024.jpg) -->
+<img src="/assets/2021/09/IMG_8139-768x1024.jpg" width="60%" height="60%">
