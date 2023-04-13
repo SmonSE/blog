@@ -25,7 +25,6 @@ meta:
     _ez-toc-heading-levels: a:0:{} 
     _ez-toc-alttext: '' 
     _ez-toc-exclude: '' 
-    rank_math_og_content_image: a:2:{s:5:"check";s:32:"04400f80db0c0f6dc30bc16f335c1642";s:6:"images";a:1:{i:0;i:509;}} 
 author: Smon
 permalink: "/2021/05/05/ikea-tradfri-telegram/" 
 ---

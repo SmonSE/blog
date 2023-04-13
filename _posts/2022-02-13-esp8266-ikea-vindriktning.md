@@ -17,17 +17,16 @@ tags:
     - Luftqualitätssensor 
     - WeMosD1 
 meta: 
-rank\_math\_seo\_score: '90' 
-rank\_math\_primary\_category: '13' 
-\_edit\_last: '1' 
-\_ez-toc-disabled: '' 
-\_ez-toc-insert: '' 
-\_ez-toc-heading-levels: a:0:{} 
-\_ez-toc-alttext: '' 
-\_ez-toc-exclude: '' 
-rank\_math\_internal\_links\_processed: '1' 
-rank\_math\_focus\_keyword: VINDRIKTNING 
-rank\_math\_og\_content\_image: a:2:{s:5:"check";s:32:"9adafaea22fdb5224ca820ee0821ca79";s:6:"images";a:1:{i:0;s:71:"https://affengriff.net/wp-content/uploads/2022/02/IMG\_9565-768x1024.jpg";}} 
+  rank_math_seo_score: '90' 
+  rank_math_primary_category: '13' 
+  _edit_last: '1' 
+  _ez-toc-disabled: '' 
+  _ez-toc-insert: '' 
+  _ez-toc-heading-levels: a:0:{} 
+  _ez-toc-alttext: '' 
+  _ez-toc-exclude: '' 
+  rank_math_internal_links_processed: '1' 
+  rank_math_focus_keyword: VINDRIKTNING 
 author: Smon
 permalink: "/2022/02/13/esp8266-ikea-vindriktning/" 
 ---

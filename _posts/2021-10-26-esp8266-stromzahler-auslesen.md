@@ -30,7 +30,6 @@ meta:
     _ez-toc-exclude: '' 
     rank_math_internal_links_processed: '1' 
     rank_math_focus_keyword: ESP8266 
-    rank_math_og_content_image: a:2:{s:5:"check";s:32:"99c795f06b33d5c44d744667b963f7dc";s:6:"images";a:1:{i:0;i:635;}} 
 author: Smon
 permalink: "/2021/10/26/esp8266-stromzahler-auslesen/" 
 ---

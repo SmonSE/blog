@@ -28,7 +28,6 @@ meta:
   _ez-toc-heading-levels: a:0:{}
   _ez-toc-alttext: ''
   _ez-toc-exclude: ''
-  rank_math_og_content_image: a:2:{s:5:"check";s:32:"71e1396acab23de82471974d4e82f373";s:6:"images";a:1:{i:0;s:71:"https://affengriff.net/wp-content/uploads/2022/09/IMG_1410-768x1024.jpg";}}
 author: Smon
 permalink: "/2022/09/29/gaszahler-auslesen/"
 ---

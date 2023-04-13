@@ -30,7 +30,6 @@ meta:
     rank_math_internal_links_processed: '1' 
     rank_math_primary_category: '13' 
     rank_math_focus_keyword: Mycroft 
-    rank_math_og_content_image: a:2:{s:5:"check";s:32:"d50cf88c33377e8762ca55d41bc0e079";s:6:"images";a:1:{i:0;i:716;}} 
 author: Smon
 permalink: "/2021/11/03/mycroft-docker-raspberry/" 
 ---

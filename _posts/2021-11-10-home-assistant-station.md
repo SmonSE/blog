@@ -27,9 +27,7 @@ meta:
     _ez-toc-exclude: '' 
     rank_math_internal_links_processed: '1' 
     rank_math_focus_keyword: Home Assistant 
-    rank_math_contentai_score: a:5:{s:9:"wordCount";s:3:"100";s:9:"linkCount";s:1:"0";s:12:"headingCount";s:3:"100";s:10:"mediaCount";s:5:"62.22";s:8:"keywords";s:5:"74.51";} 
     rank_math_primary_category: '89' 
-    rank_math_og_content_image: a:2:{s:5:"check";s:32:"30665a4ab17dd1575f98f8f4f271b851";s:6:"images";a:1:{i:0;i:736;}} 
 author: Smon
 permalink: "/2021/11/10/home-assistant-station/" 
 ---

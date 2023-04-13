@@ -28,7 +28,6 @@ meta:
     _ez-toc-exclude: '' 
     rank_math_primary_category: '13' 
     rank_math_focus_keyword: ESP32 
-    rank_math_og_content_image: a:2:{s:5:"check";s:32:"a1de4c41dae7e5382d474caada11175e";s:6:"images";a:1:{i:0;i:1082;}} 
 author: Smon
 permalink: "/2022/08/01/esp32-stromzaehler-arduino-cloud/" 
 ---

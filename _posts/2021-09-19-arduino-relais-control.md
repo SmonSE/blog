@@ -34,7 +34,6 @@ meta:
     rank_math_primary_category: '13' 
     rank_math_focus_keyword: Arduino Nano 
     _wp_old_slug: cheap-arduino-nano-v3-relais-control-via-gui 
-    rank_math_og_content_image: a:2:{s:5:"check";s:32:"b612d75c5a4c45bf5002876ab9aae40a";s:6:"images";a:1:{i:0;i:547;}} 
 author: Smon
 permalink: "/2021/09/19/arduino-relais-control/" 
 ---

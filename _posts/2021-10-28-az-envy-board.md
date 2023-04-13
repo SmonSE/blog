@@ -27,7 +27,6 @@ meta:
     _ez-toc-exclude: '' 
     rank_math_internal_links_processed: '1' 
     rank_math_focus_keyword: AZ-Envy 
-    rank_math_og_content_image: a:2:{s:5:"check";s:32:"41d71cbcc352bf86840883084863ef47";s:6:"images";a:1:{i:0;i:696;}} 
 author: Smon
 permalink: "/2021/10/28/az-envy-board/" 
 ---
