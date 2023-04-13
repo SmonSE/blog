@@ -40,12 +40,11 @@ Zu dem Luftqualitätssensor von Ikea (Vindriktning) mittels ESP8266 findet man e
 **Aufbau**
 ----------
 
-![WeMos D1]({{ site.baseurl }}/assets/2022/02/IMG_9565-768x1024.jpg)
-
-![Ikea Vindriktning<br />
-]({{ site.baseurl }}/assets/2022/02/IMG_9566-768x1024.jpg)
-
-![Ikea VINDRIKTNING]({{ site.baseurl }}/assets/2022/02/IMG_9568-768x1024.jpg)
+<p float="left">
+    <img src="/assets/2022/02/IMG_9565-768x1024.jpg" width="30%" height="30%">
+    <img src="/assets/2022/02/IMG_9566-768x1024.jpg" width="30%" height="30%">
+    <img src="/assets/2022/02/IMG_9568-768x1024.jpg" width="30%" height="30%">
+</p>
 
 **Anschlussplan**
 -----------------
@@ -101,7 +100,8 @@ Nach dem anlöten der Einzelandern habe ich die WeMos D1 Platine mit einem Strei
 **Home Assistant grafische Darstellung**
 ----------------------------------------
 
-![]({{ site.baseurl }}/assets/2022/02/Bildschirmfoto-2022-02-13-um-21.44.38-1024x364.png)
+<!-- ![]({{ site.baseurl }}/assets/2022/02/Bildschirmfoto-2022-02-13-um-21.44.38-1024x364.png) -->
+<img src="/assets/2022/02/Bildschirmfoto-2022-02-13-um-21.44.38-1024x364.png" width="70%" height="70%">
 
     type: gauge
     min: 0
