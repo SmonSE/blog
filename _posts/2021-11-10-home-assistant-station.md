@@ -21,7 +21,8 @@ author: Smon
 permalink: "/2021/11/10/home-assistant-station/" 
 ---
 
-![Home Assistant station]({{ site.baseurl }}/assets/2021/11/IMG_8799-768x1024.jpg)
+<!-- ![Home Assistant station]({{ site.baseurl }}/assets/2021/11/IMG_8799-768x1024.jpg) -->
+<img src="/assets/2021/11/IMG_8799-768x1024.jpg" width="70%" height="70%">
 
 In order to make the daily electricity consumption for the family visible, I built a [small home assistant](http://elesie.de/2021/11/10/home-assistant-station/) monitor.
 
@@ -48,7 +49,8 @@ Most of the work on this project was the 3D printer case. I found various housin
 **3D printer housing**
 ----------------------
 
-![Home Assistant 3D Print]({{ site.baseurl }}/assets/2021/11/Bildschirmfoto-2021-11-10-um-13.43.44.png)
+<!-- ![Home Assistant 3D Print]({{ site.baseurl }}/assets/2021/11/Bildschirmfoto-2021-11-10-um-13.43.44.png) -->
+<img src="/assets/2021/11/Bildschirmfoto-2021-11-10-um-13.43.44.png" width="70%" height="70%">
 
 This is my first draft of a 3D printer case based on an existing project from [Thingiverse](https://www.thingiverse.com/thing:2871564).
 
@@ -98,8 +100,6 @@ Since the display is now running and rotated with the correct drivers, we can fo
     #@chromium-browser --incognito --start-fullscreen http://homeassistant.local:8123/lovelace/0
     
     
-     
-
 **Software setup Home Assistant**
 ---------------------------------
 
