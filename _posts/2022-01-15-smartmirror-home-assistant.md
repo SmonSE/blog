@@ -27,8 +27,8 @@ vor längerer Zeit habe ich mir einen SmartMirror für das Betriebssystem [Mirro
 **Bau des SmartMirro**r
 -----------------------
 
-![SmartMirror Innenleben<br />
-]({{ site.baseurl }}/assets/2022/01/IMG_9344.jpg)
+<!-- ![SmartMirror]({{ site.baseurl }}/assets/2022/01/IMG_9344.jpg) -->
+<img src="/assets/2022/01/IMG_9344.jpg" width="70%" height="70%">
 
 *   Raspberry Pi 3
 *   Netzteil (sehr schmal)
@@ -43,7 +43,8 @@ vor längerer Zeit habe ich mir einen SmartMirror für das Betriebssystem [Mirro
 *   Schrauben
 *   [Spionspiegel auf Maß bestellt](https://www.glas-star.de/collections/mirropane-chrome-spy)
 
-![SmartMirror fertig]({{ site.baseurl }}/assets/2022/01/IMG_9349.jpg)
+<!-- ![SmartMirror fertig]({{ site.baseurl }}/assets/2022/01/IMG_9349.jpg) -->
+<img src="/assets/2022/01/IMG_9349.jpg" width="70%" height="70%">
 
 So sieht mein fertiger SmarMirror aus. Ich habe mir damals eine Steckdose für hinter den Spiegel installieren lassen die über den unteren rechten Schalter geschalten wird.
 
@@ -52,11 +53,15 @@ Der Spionspiegel ist mit Magneten im Rahmen befestigt wodurch ich ihn jederzeit 
 **Bildergalerie**
 -----------------
 
-![]({{ site.baseurl }}/assets/2022/01/IMG_9343.jpg)
-
+<!-- ![]({{ site.baseurl }}/assets/2022/01/IMG_9343.jpg)
 ![]({{ site.baseurl }}/assets/2022/01/IMG_9345.jpg)
+![]({{ site.baseurl }}/assets/2022/01/IMG_9347.jpg) -->
 
-![]({{ site.baseurl }}/assets/2022/01/IMG_9347.jpg)
+<p float="left">
+    <img src="/assets/2022/01/IMG_9343.jpg" width="30%" height="30%">
+    <img src="/assets/2022/01/IMG_9345.jpg" width="30%" height="30%">
+    <img src="/assets/2022/01/IMG_9347.jpg" width="30%" height="30%">
+</p>
 
 **Benötigte Software**
 ----------------------
@@ -120,7 +125,8 @@ Nach dem wiederholten Scheitern von Chrome, die [Anmeldedaten für Home Assistan
 **Home Assistant Lovelace**
 ---------------------------
 
-![]({{ site.baseurl }}/assets/2022/01/Bildschirmfoto-2022-01-15-um-22.21.51-1-668x1024.png)
+<!-- ![]({{ site.baseurl }}/assets/2022/01/Bildschirmfoto-2022-01-15-um-22.21.51-1-668x1024.png) -->
+<img src="/assets/2022/01/Bildschirmfoto-2022-01-15-um-22.21.51-1-668x1024.png" width="70%" height="70%">
 
 Die Darstellung der Benutzeroberfläche kann mittels individuellem [Hassio Lovelace](https://www.home-assistant.io/lovelace/) angepasst werden.
 

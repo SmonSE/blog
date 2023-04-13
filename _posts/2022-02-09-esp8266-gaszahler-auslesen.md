@@ -54,11 +54,15 @@ Mein erstes Problem bestand darin das ich mittels eines normalen WeMos D1 keinen
 **Aufbau**
 ----------
 
-![]({{ site.baseurl }}/assets/2022/02/Bildschirmfoto-2022-02-09-um-11.07.32.png)
-
+<!-- ![]({{ site.baseurl }}/assets/2022/02/Bildschirmfoto-2022-02-09-um-11.07.32.png)
 ![]({{ site.baseurl }}/assets/2022/02/Bildschirmfoto-2022-02-09-um-11.23.15-730x1024.png)
+![]({{ site.baseurl }}/assets/2022/02/IMG_9647-732x1024.jpg) -->
 
-![]({{ site.baseurl }}/assets/2022/02/IMG_9647-732x1024.jpg)
+<p float="left">
+    <img src="/assets/2022/02/Bildschirmfoto-2022-02-09-um-11.07.32.png" width="30%" height="30%">
+    <img src="/assets/2022/02/Bildschirmfoto-2022-02-09-um-11.23.15-730x1024.png" width="30%" height="30%">
+    <img src="/assets/2022/02/IMG_9647-732x1024.jpg" width="30%" height="30%">
+</p>
 
 In meinem Fall habe ich mir bei Thingiverse ein passendes Case für den WeMos D1 Mini Pro geholt und mittels Tinkercad auf mein entworfenes Case gesetzt. Somit kann jede beliebige ESP8266 Platine mit der Magnetsensor Grundplatte verbunden werden.
 
@@ -74,7 +78,8 @@ Beim Magnetschalter muss man sehr auf das Glasröhrchen achten. Ich habe das Gla
 **Gaszähler** Typ **G4 RF1**
 ----------------------------
 
-![G4 RF1 von Actaris ESP8266]({{ site.baseurl }}/assets/2022/02/IMG_9661-716x1024.jpg)
+<!-- ![G4 RF1 von Actaris ESP8266]({{ site.baseurl }}/assets/2022/02/IMG_9661-716x1024.jpg) -->
+<img src="/assets/2022/02/IMG_9661-716x1024.jpg" width="70%" height="70%">
 
 Bei meinem Gaszähler handelt es sich um das Model G4 RF1 von Actaris.
 
@@ -160,6 +165,10 @@ Hier hatte ich zu Beginn Probleme beim Kompilieren der Software. Ich hatte unter
 ****Home Assistant grafische Darstellung****
 --------------------------------------------
 
-![]({{ site.baseurl }}/assets/2022/02/IMG_9654-613x1024.jpg)
+<!-- ![]({{ site.baseurl }}/assets/2022/02/IMG_9654-613x1024.jpg)
+![]({{ site.baseurl }}/assets/2022/02/IMG_9656-609x1024.jpg) -->
 
-![]({{ site.baseurl }}/assets/2022/02/IMG_9656-609x1024.jpg)
+<p float="left">
+    <img src="/assets/2022/02/IMG_9654-613x1024.jpg" width="30%" height="30%">
+    <img src="/assets/2022/02/IMG_9656-609x1024.jpg" width="30%" height="30%">
+</p>
