@@ -8,15 +8,15 @@ published: true
 password: ''
 status: publish
 categories:
-- Blog
-- HomeAssistant
+  - Blog
+  - HomeAssistant
 tags:
-- 3D Printer
-- Aqara
-- Aqara Sensor
-- Gaszähler
-- IoT
-- Tinkercad
+  - 3D Printer
+  - Aqara
+  - Aqara Sensor
+  - Gaszähler
+  - IoT
+  - Tinkercad
 meta:
   rank_math_internal_links_processed: '1'
   rank_math_seo_score: '86'

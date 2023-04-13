@@ -3,20 +3,20 @@ layout: post
 title: ESP32 - Digitaler Stromzähler auslesen Arduino IoT Cloud Remote 
 date: 2022-08-01 15:05:42.000000000 +02:00 
 type: post 
-parent\_id: '0' 
+parent_id: '0' 
 published: true 
 password: '' 
 status: publish 
 categories: 
-- Blog 
-- Projekte 
+  - Blog 
+  - Projekte 
 tags: 
-- 3D Drucker 
-- Arduino IoT Cloud 
-- Digitaler Stromzaehler 
-- ESP32 
-- IoT 
-- Remote App 
+  - 3D Drucker 
+  - Arduino IoT Cloud 
+  - Digitaler Stromzaehler 
+  - ESP32 
+  - IoT 
+  - Remote App 
 meta: 
     rank_math_internal_links_processed: '1' 
     rank_math_seo_score: '85' 

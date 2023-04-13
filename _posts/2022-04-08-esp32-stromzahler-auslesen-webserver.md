@@ -33,7 +33,7 @@ meta:
     rank_math_contentai_score: a:5:{s:9:"wordCount";s:3:"100";s:9:"linkCount";s:1:"0";  s:12:"headingCount";s:3:"100";s:10:"mediaCount";s:5:"62.22";s:8:"keywords";s:5:"74.51";}   
     rank_math_og_content_image: a:2:{s:5:"check";s:32:"5b1a2014c08effd9ff07277a5091b395";s:6:"images";a:1:{i:0;i:1047;}} 
 author: Smon
-permalink: "2022-04-08-esp32-stromzahler-auslesen-webserver/"
+permalink: "/2022/04/08/esp32-stromzahler-auslesen-webserver/"
 ---
 
 Mit der Hilfe eines ESP32 und eines einfachen IR Moduls kann am Stromzähler der aktuelle Stromverbrauch ausgelesen werden **ohne** das man den Stromzähler PIN benötigt. Mittels einem WebServer der vom ESP32 aufgebaut wird kann der aktuelle Verbrauch ausgelesen und grafisch dargestellt werden.
