@@ -18,17 +18,6 @@ tags:
     - MirrorOS 
     - RaspberryPi3 
     - SmartMirror 
-meta: 
-    rank_math_seo_score: '86' 
-    _edit_last: '1' 
-    _ez-toc-disabled: '' 
-    _ez-toc-insert: '' 
-    _ez-toc-heading-levels: a:0:{} 
-    _ez-toc-alttext: '' 
-    _ez-toc-exclude: '' 
-    rank_math_internal_links_processed: '1' 
-    rank_math_focus_keyword: SmartMirror 
-    rank_math_primary_category: '13' 
 author: Smon
 permalink: "/2022/01/15/smartmirror-home-assistant/" 
 ---

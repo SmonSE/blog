@@ -22,18 +22,6 @@ tags:
     - Relais 
     - Schematics 
     - Tinkercad 
-meta: 
-    rank_math_seo_score: '82' 
-    _edit_last: '1' 
-    _ez-toc-disabled: '' 
-    _ez-toc-insert: '' 
-    _ez-toc-heading-levels: a:1:{i:3;i:3;} 
-    _ez-toc-alttext: '' 
-    _ez-toc-exclude: '' 
-    rank_math_internal_links_processed: '1' 
-    rank_math_primary_category: '13' 
-    rank_math_focus_keyword: Arduino Nano 
-    _wp_old_slug: cheap-arduino-nano-v3-relais-control-via-gui 
 author: Smon
 permalink: "/2021/09/19/arduino-relais-control/" 
 ---

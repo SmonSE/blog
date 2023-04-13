@@ -19,17 +19,6 @@ tags:
     - nodemcuv2 
     - Stromzähler IR Diode 
     - TCRT5000 
-meta: 
-    rank_math_seo_score: '86' 
-    rank_math_primary_category: '13' 
-    _edit_last: '1' 
-    _ez-toc-disabled: '' 
-    _ez-toc-insert: '' 
-    _ez-toc-heading-levels: a:2:{i:1;i:1;i:2;i:2;} 
-    _ez-toc-alttext: '' 
-    _ez-toc-exclude: '' 
-    rank_math_internal_links_processed: '1' 
-    rank_math_focus_keyword: ESP8266 
 author: Smon
 permalink: "/2021/10/26/esp8266-stromzahler-auslesen/" 
 ---

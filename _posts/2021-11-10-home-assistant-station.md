@@ -17,17 +17,6 @@ tags:
     - Kuman LCD Display 
     - Raspberry Pi 3 Model B 
     - smart home 
-meta: 
-    rank_math_seo_score: '86' 
-    _edit_last: '1'
-    _ez-toc-disabled: '' 
-    _ez-toc-insert: '' 
-    _ez-toc-heading-levels: a:0:{} 
-    _ez-toc-alttext: '' 
-    _ez-toc-exclude: '' 
-    rank_math_internal_links_processed: '1' 
-    rank_math_focus_keyword: Home Assistant 
-    rank_math_primary_category: '89' 
 author: Smon
 permalink: "/2021/11/10/home-assistant-station/" 
 ---

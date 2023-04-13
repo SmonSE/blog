@@ -23,18 +23,6 @@ tags:
     - Ultraschallsensor 
     - Wandgehäuse 
     - WeMosD1 
-meta: 
-  rank_math_seo_score: '82' 
-  rank_math_focus_keyword: Pelletsensor 
-  _edit_last: '1' 
-  _ez-toc-disabled: '' 
-  _ez-toc-insert: '' 
-  _ez-toc-heading-levels: a:0:{} 
-  _ez-toc-alttext: '' 
-  _ez-toc-exclude: '' 
-  rank_math_internal_links_processed: '1' 
-  _wp_old_slug: pelletsensor-fullstandsanzeige-mit-wemos-d1-ultraschallsensor
-  rank_math_primary_category: '13' 
 author: Smon
 permalink: "/2022/01/13/pelletsensor/" 
 ---

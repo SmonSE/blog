@@ -19,17 +19,6 @@ tags:
     - NoHeyGoogle 
     - PiCroft 
     - VoiceAssistant 
-meta: 
-    rank_math_seo_score: '81' 
-    _edit_last: '1' 
-    _ez-toc-disabled: '' 
-    _ez-toc-insert: '' 
-    _ez-toc-heading-levels: a:0:{} 
-    _ez-toc-alttext: '' 
-    _ez-toc-exclude: '' 
-    rank_math_internal_links_processed: '1' 
-    rank_math_primary_category: '13' 
-    rank_math_focus_keyword: Mycroft 
 author: Smon
 permalink: "/2021/11/03/mycroft-docker-raspberry/" 
 ---

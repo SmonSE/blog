@@ -16,17 +16,6 @@ tags:
     - humidity 
     - Rauchmelder 
     - Temperatur 
-meta: 
-    rank_math_seo_score: '88' 
-    rank_math_primary_category: '13' 
-    _edit_last: '1' 
-    _ez-toc-disabled: '' 
-    _ez-toc-insert: '' 
-    _ez-toc-heading-levels: a:0:{} 
-    _ez-toc-alttext: '' 
-    _ez-toc-exclude: '' 
-    rank_math_internal_links_processed: '1' 
-    rank_math_focus_keyword: AZ-Envy 
 author: Smon
 permalink: "/2021/10/28/az-envy-board/" 
 ---

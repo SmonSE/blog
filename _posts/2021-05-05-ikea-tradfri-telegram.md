@@ -14,17 +14,6 @@ tags:
     - Home Automation 
     - IKEA TRADFRI 
     - Telegram Bot 
-meta: 
-    rank_math_seo_score: '85' 
-    _edit_last: '1' 
-    rank_math_internal_links_processed: '1' 
-    rank_math_primary_category: '13' 
-    rank_math_focus_keyword: IKEA TRÅDFRI 
-    _ez-toc-disabled: '' 
-    _ez-toc-insert: '' 
-    _ez-toc-heading-levels: a:0:{} 
-    _ez-toc-alttext: '' 
-    _ez-toc-exclude: '' 
 author: Smon
 permalink: "/2021/05/05/ikea-tradfri-telegram/" 
 ---

@@ -19,17 +19,6 @@ tags:
     - Tinkercad 
     - WeMosD1 
     - WeMosD1 Mini Pro 
-meta: 
-  rank_math_seo_score: '83' 
-  _edit_last: '1' 
-  _ez-toc-disabled: '' 
-  _ez-toc-insert: '' 
-  _ez-toc-heading-levels: a:1:{i:2;i:2;} 
-  _ez-toc-alttext: '' 
-  _ez-toc-exclude: '' 
-  rank_math_internal_links_processed: '1' 
-  rank_math_focus_keyword: ESP8266 
-  rank_math_primary_category: '13' 
 author: Smon
 permalink: "/2022/02/09/esp8266-gaszahler-auslesen/" 
 ---
