@@ -58,11 +58,15 @@ Das ganze ist entstanden aufgrund meines [Balkonkraftwerkes](https://www.hello-y
 **Aufbau**
 ----------
 
-![]({{ site.baseurl }}/assets/2021/10/IMG_8663.jpg)
-
+<!-- ![]({{ site.baseurl }}/assets/2021/10/IMG_8663.jpg)
 ![]({{ site.baseurl }}/assets/2021/10/IMG_8664-1.jpg)
+![]({{ site.baseurl }}/assets/2021/10/IMG_8665-1.jpg) -->
 
-![]({{ site.baseurl }}/assets/2021/10/IMG_8665-1.jpg)
+<p float="left">
+    <img src="/assets/2021/10/IMG_8663.jpg" width="30%" height="30%">
+    <img src="/assets/2021/10/IMG_8664-1.jpg" width="30%" height="30%">
+    <img src="/assets/2021/10/IMG_8665-1.jpg" width="30%" height="30%">
+</p>
 
 **IR Modul TCRT5000 modifikation**
 ----------------------------------
@@ -138,16 +142,21 @@ Update Intervall ist hier in der yaml auf 60s eingestellt. Alle 60s sollte sich 
 **Home Assistant grafische Darstellung**
 ----------------------------------------
 
-![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-25-um-23.48.17.png)
-
+<!-- ![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-25-um-23.48.17.png)
 ![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-25-um-23.48.35.png)
+![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-25-um-23.49.18-1.png) -->
 
-![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-25-um-23.49.18-1.png)
+<p float="left">
+    <img src="/assets/2021/10/Bildschirmfoto-2021-10-25-um-23.48.17.png" width="30%" height="30%">
+    <img src="/assets/2021/10/Bildschirmfoto-2021-10-25-um-23.48.35.png" width="30%" height="30%">
+    <img src="/assets/2021/10/Bildschirmfoto-2021-10-25-um-23.49.18-1.png" width="30%" height="30%">
+</p>
 
 **Spannungsversorgung Verteilerkasten**
 ---------------------------------------
 
-![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2022-01-18-um-11.17.13-1-658x1024.png)
+<!-- ![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2022-01-18-um-11.17.13-1-658x1024.png) -->
+<img src="/assets/2021/10/Bildschirmfoto-2022-01-18-um-11.17.13-1-658x1024.png" width="60%" height="60%">
 
 Aktuell habe ich im Haus an jedem meiner Zähler einen Sensor mit Magnet befestigt. Die Sensoren sind an einem ESP8266 nodemcuv2 angeschlossen (Spannung, Masse, D5 und D6).
 
@@ -218,7 +227,8 @@ Die [Zählerschranksteckdose](https://www.amazon.de/Wago-SCHALTSCHRANKSTECKDOSE-
 **Zwei Sensoren an einem ESP8266**
 ==================================
 
-![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2022-01-18-um-11.16.44-925x1024.png)
+<!-- ![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2022-01-18-um-11.16.44-925x1024.png) -->
+<img src="/assets/2021/10/Bildschirmfoto-2022-01-18-um-11.16.44-925x1024.png" width="60%" height="60%">
 
 Natürlich kann man auch zwei Stromzähler mit einem ESP8266 betreiben.
 
