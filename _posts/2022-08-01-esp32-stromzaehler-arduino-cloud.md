@@ -26,10 +26,8 @@ meta:
     _ez-toc-heading-levels: a:0:{} 
     _ez-toc-alttext: '' 
     _ez-toc-exclude: '' 
-    _oembed_c2944b252fab8fc4cbd1dfa6bcd805e1: "{{unknown}}" _oembed_a7d0bdae739bf6a84521cf87523b0ead: "{{unknown}}" 
     rank_math_primary_category: '13' 
     rank_math_focus_keyword: ESP32 
-    _oembed_1b68f80cd12669094a9477695d93a4af: "{{unknown}}" 
     rank_math_og_content_image: a:2:{s:5:"check";s:32:"a1de4c41dae7e5382d474caada11175e";s:6:"images";a:1:{i:0;i:1082;}} 
 author: Smon
 permalink: "/2022/08/01/esp32-stromzaehler-arduino-cloud/" 
