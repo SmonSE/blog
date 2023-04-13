@@ -63,7 +63,7 @@ There are two ways to create the flash file. Here I am describing one of them.
 ----------------------------------------
 
 <!-- ![ESPHome]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-28-um-13.32.37-1-1024x640.png) -->
-<img src="/assets/2021/10/Bildschirmfoto-2021-10-28-um-13.32.37-1-1024x640.png" width="70%" height="70%">
+<img src="/assets/2021/10/Bildschirmfoto-2021-10-28-um-13.32.37-1-1024x640.png" width="60%" height="60%">
 
 Install ESPHome under HomeAssitant.
 
@@ -72,7 +72,7 @@ Configure and open ESPHome
 Press the + button at the bottom of the page
 
 <!-- ![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-28-um-19.55.32-765x1024.png) -->
-<img src="/assets/2021/10/Bildschirmfoto-2021-10-28-um-19.55.32-765x1024.png" width="70%" height="70%">
+<img src="/assets/2021/10/Bildschirmfoto-2021-10-28-um-19.55.32-765x1024.png" width="50%" height="50%">
 
 Enter Projektnamens
 
@@ -156,7 +156,7 @@ This file can then be installed via the terminal.
 ------------------------------------------
 
 <!-- ![AZ-Envy]({{ site.baseurl }}/assets/2021/10/IMG_8677-768x1024.jpg) -->
-<img src="/assets/2021/10/IMG_8677-768x1024.jpg" width="70%" height="70%">
+<img src="/assets/2021/10/IMG_8677-768x1024.jpg" width="50%" height="50%">
 
 First you have to connect the FT232RL Flasher Board to the AZ-Envy. However, you only need three individual wires (jumper wire). Only the pins GND, RX, TX need to be connected.
 
@@ -209,7 +209,7 @@ To get correct results from AZ Envy temperature sensor I have desoldered the PM-
 
 <p float="left">
     <img src="/assets/2021/10/Bildschirmfoto-2022-01-25-um-13.34.22-1024x976.png" width="40%" height="40%">
-    <img src="/assets/2021/10/Bildschirmfoto-2022-01-25-um-13.34.42-1024x701.png" width="40%" height="40%">
+    <img src="/assets/2021/10/Bildschirmfoto-2022-01-25-um-13.34.42-1024x701.png" width="50%" height="50%">
 </p>
 
 **My conclusion on the AZ Envy**
