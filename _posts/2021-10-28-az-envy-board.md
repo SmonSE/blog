@@ -55,7 +55,7 @@ Download [3D-print Box](https://cdn.shopify.com/s/files/1/1509/1638/files/3D_pri
 There are two ways to create the flash file. Here I am describing one of them.
 
 *   Flash file created with ESPHome.io
-*   Flash file created with [HomeAssistant](https://elesie.de/category/homeassistant/)
+*   Flash file created with HomeAssistant
 
 **Generate firmware with HomeAssistant**
 ----------------------------------------

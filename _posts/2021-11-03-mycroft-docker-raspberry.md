@@ -23,7 +23,7 @@ author: Smon
 permalink: "/2021/11/03/mycroft-docker-raspberry/" 
 ---
 
-I currently have [my home automation](https://elesie.de/category/homeassistant/) running on a Raspberry Pi 4 with Home Assistant (hassio). My idea was to control the whole thing with a voice assistant. Since you can run the Mycroft in a Docker environment, I want to do the whole setup with only one Raspberry Pi. I don't think that the Pi’s resources are sufficient, but it's worth a try. The first attempts with a Raspberry Pi 3 show that it has to struggle with Mycroft via docker.
+I currently have my home automation running on a Raspberry Pi 4 with Home Assistant (hassio). My idea was to control the whole thing with a voice assistant. Since you can run the Mycroft in a Docker environment, I want to do the whole setup with only one Raspberry Pi. I don't think that the Pi’s resources are sufficient, but it's worth a try. The first attempts with a Raspberry Pi 3 show that it has to struggle with Mycroft via docker.
 
 **Required Hardware:**
 ----------------------
