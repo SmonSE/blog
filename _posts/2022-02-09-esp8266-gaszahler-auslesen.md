@@ -3,7 +3,7 @@ layout: post
 title: ESP8266 - Gaszähler auslesen 
 date: 2022-02-09 17:20:29.000000000 +01:00 
 type: post
-published: true password: '' 
+published: true
 status: publish 
 categories: 
     - Blog 
