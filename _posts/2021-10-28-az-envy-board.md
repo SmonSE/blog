@@ -26,7 +26,8 @@ Now a few sentences about the board. I don't understand why no data lines were a
 
 But what bothers me most about the board design is that the temperature sensor is right next to the heater of the gas sensor. Even if the sensor has been running for a while, the temperature sensor spits out a wide variety of values. Unfortunately, no offset helps to adjust the temperature. I haven't compared the humidity with any other product so far, but from what I've read on the Internet, the Dev-Board doesn't seem to work reliably either.
 
-![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-28-um-16.33.03.png)
+<!-- ![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-28-um-16.33.03.png) -->
+<img src="/assets/2021/10/Bildschirmfoto-2021-10-28-um-16.33.03.png" width="70%" height="70%">
 
 **Hardware required for commissioning**
 ---------------------------------------
@@ -45,7 +46,8 @@ But what bothers me most about the board design is that the temperature sensor i
 **3D printer housing**
 ----------------------
 
-![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-28-um-19.44.27.png)
+<!-- ![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-28-um-19.44.27.png) -->
+<img src="/assets/2021/10/Bildschirmfoto-2021-10-28-um-19.44.27.png" width="70%" height="70%">
 
 Download [3D-print Box](https://cdn.shopify.com/s/files/1/1509/1638/files/3D_print.zip?v=1606923703)
 
@@ -60,7 +62,8 @@ There are two ways to create the flash file. Here I am describing one of them.
 **Generate firmware with HomeAssistant**
 ----------------------------------------
 
-![ESPHome HomeAssistant]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-28-um-13.32.37-1-1024x640.png)
+<!-- ![ESPHome]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-28-um-13.32.37-1-1024x640.png) -->
+<img src="/assets/2021/10/Bildschirmfoto-2021-10-28-um-13.32.37-1-1024x640.png" width="70%" height="70%">
 
 Install ESPHome under HomeAssitant.
 
@@ -68,7 +71,8 @@ Configure and open ESPHome
 
 Press the + button at the bottom of the page
 
-![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-28-um-19.55.32-765x1024.png)
+<!-- ![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-28-um-19.55.32-765x1024.png) -->
+<img src="/assets/2021/10/Bildschirmfoto-2021-10-28-um-19.55.32-765x1024.png" width="70%" height="70%">
 
 Enter Projektnamens
 
@@ -84,7 +88,9 @@ Press button"next".
 
 A congratulation logo should appear. In case of an error, simply press "next" again
 
-![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-28-um-13.34.49-1024x558.png)
+<!-- ![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-28-um-13.34.49-1024x558.png) -->
+<img src="/assets/2021/10/Bildschirmfoto-2021-10-28-um-13.34.49-1024x558.png" width="70%" height="70%">
+
 
 The new project has been created and is not yet connected (therefore red).
 
@@ -149,7 +155,8 @@ This file can then be installed via the terminal.
 **AZ-Envy Firmware flashing via Terminal**
 ------------------------------------------
 
-![AZ-Envy]({{ site.baseurl }}/assets/2021/10/IMG_8677-768x1024.jpg)
+<!-- ![AZ-Envy]({{ site.baseurl }}/assets/2021/10/IMG_8677-768x1024.jpg) -->
+<img src="/assets/2021/10/IMG_8677-768x1024.jpg" width="70%" height="70%">
 
 First you have to connect the FT232RL Flasher Board to the AZ-Envy. However, you only need three individual wires (jumper wire). Only the pins GND, RX, TX need to be connected.
 
@@ -173,13 +180,16 @@ The following steps have to be taken:
 
 If the device is not recognized correctly and the following output appears.
 
-![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-28-um-12.15.17-1024x270.png)
+<!-- ![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-28-um-12.15.17-1024x270.png) -->
+<img src="/assets/2021/10/Bildschirmfoto-2021-10-28-um-12.15.17-1024x270.png" width="70%" height="70%">
 
 1.  Hold down the flash button on the EZ-Envy as long as step 2 is finished.
 2.  Unplug the EZ-Envy's USB cable and plug it in again.
 3.  Now the firmware should be flashed (see picture below)
 
-![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-28-um-12.30.08-1024x373.png)
+<!-- ![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2021-10-28-um-12.30.08-1024x373.png) -->
+<img src="/assets/2021/10/Bildschirmfoto-2021-10-28-um-12.30.08-1024x373.png" width="70%" height="70%">
+
 
 Check your Python Version (in my case Python 3.10.0):
 
@@ -194,9 +204,13 @@ Install Python3 with the following command:
 
 To get correct results from AZ Envy temperature sensor I have desoldered the PM-2 gas sensor. Then I soldered the gas sensor using single wires so that I got a greater distance to the temperature sensor. After that the temp results were much better but not great. I found out that the ESP8266 also emits heat on the metal housing, which slightly fake the measurement results. For this case, I glued a heatsink to the ESP8266's metal case. Now I only have an offset of -1.0 degrees to my room thermostat.
 
-![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2022-01-25-um-13.34.22-1024x976.png)
+<!-- ![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2022-01-25-um-13.34.22-1024x976.png)
+![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2022-01-25-um-13.34.42-1024x701.png) -->
 
-![]({{ site.baseurl }}/assets/2021/10/Bildschirmfoto-2022-01-25-um-13.34.42-1024x701.png)
+<p float="left">
+    <img src="/assets/2021/10/Bildschirmfoto-2022-01-25-um-13.34.22-1024x976.png" width="40%" height="40%">
+    <img src="/assets/2021/10/Bildschirmfoto-2022-01-25-um-13.34.42-1024x701.png" width="40%" height="40%">
+</p>
 
 **My conclusion on the AZ Envy**
 --------------------------------
