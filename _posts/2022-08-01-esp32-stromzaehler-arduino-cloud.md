@@ -53,8 +53,8 @@ Die Werte sind so niedrig da mein Solarkraftwerk zu dem Zeitpunkt Strom generier
 ![]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-04-07-um-08.52.41.png) -->
 
 <p float="left">
-    <img src="/assets/2022/08/Bildschirmfoto-2022-04-07-um-08.52.16.png" width="50%" height="50%">
-    <img src="/assets/2022/08/Bildschirmfoto-2022-04-07-um-08.52.41.png" width="50%" height="50%">
+    <img src="/assets/2022/08/Bildschirmfoto-2022-04-07-um-08.52.16.png" width="40%" height="40%">
+    <img src="/assets/2022/08/Bildschirmfoto-2022-04-07-um-08.52.41.png" width="40%" height="40%">
 </p>
 
 Das neue Zählergehäuse findet man [hier](https://www.tinkercad.com/things/gfMDpMCaC8Z).
@@ -90,8 +90,8 @@ Die rechten beiden IR Dioden werden beim IR Lese-Schreibekopf verwendet ([Volksz
 
 <p float="left">
     <img src="/assets/2022/08/Bildschirmfoto-2022-04-08-um-07.56.57.png" width="30%" height="30%">
-    <img src="/assets/2022/08/Bildschirmfoto-2022-04-08-um-07.57.09.png" width="30%" height="30%">
-    <img src="/assets/2022/08/Bildschirmfoto-2022-04-08-um-07.57.25.png" width="30%" height="30%">
+    <img src="/assets/2022/08/Bildschirmfoto-2022-04-08-um-07.57.09.png" width="30%" height="28%">
+    <img src="/assets/2022/08/Bildschirmfoto-2022-04-08-um-07.57.25.png" width="30%" height="25%">
 </p>
 
 **Einrichten von Arduino IoT Cloud Remote**
