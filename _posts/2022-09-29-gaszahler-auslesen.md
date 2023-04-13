@@ -44,18 +44,18 @@ Mit der Hilfe eines Aqara Tür und Fenster Sensors ( Reed Kontakt Sensor ) kann 
 
 ## Aufbau
 
-![Aqara Tür Fenster Sensor]({{ site.baseurl }}/assets/2022/09/IMG_1410-768x1024.jpg)
+<!--- ![Aqara Tür Fenster Sensor]({{ site.baseurl }}/assets/2022/09/IMG_1410-768x1024.jpg) -->
 <img src="/assets/2022/09/IMG_1410-768x1024.jpg" width="50%" height="50%">
 
-![3D Printer Case]({{ site.baseurl }}/assets/2022/09/IMG_1411-768x1024.jpg)
+<!--- ![3D Printer Case]({{ site.baseurl }}/assets/2022/09/IMG_1411-768x1024.jpg) -->
 <img src="/assets/2022/09/IMG_1411-768x1024.jpg" width="50%" height="50%">
 
-![]({{ site.baseurl }}/assets/2022/09/IMG_1412-scaled.jpg)
+<!--- ![]({{ site.baseurl }}/assets/2022/09/IMG_1412-scaled.jpg) -->
 <img src="/assets/2022/09/IMG_1412-scaled.jpg" width="50%" height="50%">
 
 ## Gaszähler Typ G4 RF1
 
-![Gaszähler G4 RF1]({{ site.baseurl }}/assets/2022/09/IMG_1413-768x1024.jpg)
+<!--- ![Gaszähler G4 RF1]({{ site.baseurl }}/assets/2022/09/IMG_1413-768x1024.jpg) -->
 <img src="/assets/2022/09/IMG_1413-768x1024.jpg" width="50%" height="50%">
 
 Bei meinem Gaszähler handelt es sich um das Model G4 RF1 von Actaris.
@@ -136,14 +136,14 @@ template:
 
 ## Home Assistant grafische Darstellung
 
-![]({{ site.baseurl }}/assets/2022/09/Bildschirmfoto-2022-12-16-um-08.12.06.png)
+<!-- ![]({{ site.baseurl }}/assets/2022/09/Bildschirmfoto-2022-12-16-um-08.12.06.png)  -->
 <img src="/assets/2022/09/Bildschirmfoto-2022-12-16-um-08.12.06.png" width="50%" height="50%">
 
 ## Zigbee USB-Gateway Deconz - ConBeeII
 
 Der Aqara Tür und Fenster Sensors ist über Zigbee mit HomeAssistant connected. Dazu muss der Aqara Sensor mit dem USB-Gateway connected werden.
 
-![]({{ site.baseurl }}/assets/2022/09/Bildschirmfoto-2022-12-16-um-08.23.08-1024x455.png)
+<!-- ![]({{ site.baseurl }}/assets/2022/09/Bildschirmfoto-2022-12-16-um-08.23.08-1024x455.png)  -->
 <img src="/assets/2022/09/Bildschirmfoto-2022-12-16-um-08.23.08-1024x455.png" width="50%" height="50%">
 
 * Gehen Sie im Abschnitt Geräte auf Sensoren.
@@ -158,7 +158,7 @@ Der Aqara Tür und Fenster Sensors ist über Zigbee mit HomeAssistant connected.
 
 Hier sind alle devices aufgelistet. In meinem Fall hatte ich Probleme eine gute Verbindung im gesamten Haus zu bekommen. Für eine bessere Abdeckung habe ich zwei IKEA TRÅDFRI  Signalverstärker in den Stockwerken verbaut.
 
-![]({{ site.baseurl }}/assets/2022/09/Bildschirmfoto-2022-12-16-um-08.33.35.png)
+<!-- ![]({{ site.baseurl }}/assets/2022/09/Bildschirmfoto-2022-12-16-um-08.33.35.png) -->
 <img src="/assets/2022/09/Bildschirmfoto-2022-12-16-um-08.33.35.png" width="50%" height="50%">
 
 
@@ -168,6 +168,6 @@ Da ich einen Raspberry Pi 4 verwende kann ich auf den SkyConnect Matter Stick um
 
 Jetzt muss ich leider alle Zigbee Devices mit dem SkyConnect Stick neu connecten.
 
-![]({{ site.baseurl }}/assets/2022/09/Bildschirmfoto-2022-12-16-um-08.39.48-625x1024.png)
+<!-- ![]({{ site.baseurl }}/assets/2022/09/Bildschirmfoto-2022-12-16-um-08.39.48-625x1024.png) --> 
 <img src="/assets/2022/09/Bildschirmfoto-2022-12-16-um-08.39.48-625x1024.png" width="50%" height="50%">
 
