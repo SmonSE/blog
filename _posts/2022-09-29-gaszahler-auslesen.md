@@ -44,11 +44,11 @@ Mit der Hilfe eines Aqara Tür und Fenster Sensors ( Reed Kontakt Sensor ) kann 
 
 ## Aufbau
 
-<img src="/assets/2022/09/IMG_1410-768x1024.jpg" width="50%" height="50%">
-
-<img src="/assets/2022/09/IMG_1411-768x1024.jpg" width="50%" height="50%">
-
-<img src="/assets/2022/09/IMG_1412-scaled.jpg" width="50%" height="50%">
+<p float="left">
+    <img src="/assets/2022/09/IMG_1410-768x1024.jpg" width="50%" height="50%">
+    <img src="/assets/2022/09/IMG_1411-768x1024.jpg" width="50%" height="50%">
+    <img src="/assets/2022/09/IMG_1412-scaled.jpg" width="50%" height="50%">
+</p>
 
 ## Gaszähler Typ G4 RF1
 
