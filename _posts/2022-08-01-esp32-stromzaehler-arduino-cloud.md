@@ -33,7 +33,7 @@ author: Smon
 permalink: "/2022/08/01/esp32-stromzaehler-arduino-cloud/" 
 ---
 
-Mit der Hilfe eines ESP32 und eines einfachen IR Moduls kann am Stromzähler der aktuelle Stromverbrauch ausgelesen werden **ohne** das man den Stromzähler PIN benötigt. Auf der Suche nach einer Alternative zu der doch komplizierten [WebServer Lösung](2022/04/08/esp32-stromzahler-auslesen-webserver/) bin ich auf die Arduino IoT Cloud [Seite](https://docs.arduino.cc/arduino-cloud/) gestoßen. Nach kürzester Zeit hatte ich die Daten meines ESP32 + IR Moduls auf dem Handy Bildschirm.
+Mit der Hilfe eines ESP32 und eines einfachen IR Moduls kann am Stromzähler der aktuelle Stromverbrauch ausgelesen werden **ohne** das man den Stromzähler PIN benötigt. Auf der Suche nach einer Alternative zu der doch komplizierten [WebServer Lösung](http://elesie.de/2022-04-08-esp32-stromzahler-auslesen-webserver/) bin ich auf die Arduino IoT Cloud [Seite](https://docs.arduino.cc/arduino-cloud/) gestoßen. Nach kürzester Zeit hatte ich die Daten meines ESP32 + IR Moduls auf dem Handy Bildschirm.
 
 **Arduino IoT Cloud Remote App**
 --------------------------------
