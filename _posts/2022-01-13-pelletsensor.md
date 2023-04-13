@@ -58,11 +58,15 @@ Mit der Hilfe eines WEMOS D1 und eines einfachen Radar Sensors kann im Pellet Ta
 **Aufbau** **Pelletsensor**
 ---------------------------
 
-![]({{ site.baseurl }}/assets/2022/01/IMG_9293.jpg)
-
+<!-- ![]({{ site.baseurl }}/assets/2022/01/IMG_9293.jpg)
 ![]({{ site.baseurl }}/assets/2022/01/Bildschirmfoto-2022-01-13-um-12.45.56-851x1024.png)
+![]({{ site.baseurl }}/assets/2022/01/IMG_9294-768x1024.jpg) -->
 
-![]({{ site.baseurl }}/assets/2022/01/IMG_9294-768x1024.jpg)
+<p float="left">
+    <img src="/assets/2022/01/IMG_9293.jpg" width="30%" height="30%">
+    <img src="/assets/2022/01/Bildschirmfoto-2022-01-13-um-12.45.56-851x1024.png" width="30%" height="30%">
+    <img src="/assets/2022/01/IMG_9294-768x1024.jpg" width="30%" height="30%">
+</p>
 
 **ESP Home config.yaml**
 ------------------------
@@ -104,4 +108,5 @@ Update Intervall ist hier in der yaml auf 1h eingestellt. Somit wird jede Stunde
 **Home Assistant grafische Darstellung**
 ----------------------------------------
 
-![]({{ site.baseurl }}/assets/2022/01/IMG_9255.jpg)
+<!-- ![]({{ site.baseurl }}/assets/2022/01/IMG_9255.jpg) -->
+<img src="/assets/2022/01/IMG_9255.jpg" width="70%" height="70%">
