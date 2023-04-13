@@ -66,12 +66,15 @@ Um den Telegram Messenger in den Home Assistant einzubinden muss ein File auf de
 
 Unter Einstellungen -> Automatisierungen kann mittels "+ Automatisierung hinzufügen" eine neue Automation hinzugefügt werden. Einfach auf "Erstellen" und beim nächsten Fenster auf "Überspringen" drücken. Die einstellungen die ich Vorgenommen habe sind auf den nachfolgenden Bildern am besten zu sehen.
 
-![IKEA TRÅDFRI Setup<br />
-]({{ site.baseurl }}/assets/2021/05/Bildschirmfoto-2021-05-05-um-23.03.26-1024x675.png)
+<!-- ![IKEA]({{ site.baseurl }}/assets/2021/05/Bildschirmfoto-2021-05-05-um-23.03.26-1024x675.png)
+![IKEA]({{ site.baseurl }}/assets/2021/05/Bildschirmfoto-2021-05-05-um-23.03.57-1024x912.png)
+![IKEA]({{ site.baseurl }}/assets/2021/05/Bildschirmfoto-2021-05-05-um-23.04.31-1024x919.png) -->
 
-![IKEA TRÅDFRI Setup]({{ site.baseurl }}/assets/2021/05/Bildschirmfoto-2021-05-05-um-23.03.57-1024x912.png)
-
-![IKEA TRÅDFRI Setup]({{ site.baseurl }}/assets/2021/05/Bildschirmfoto-2021-05-05-um-23.04.31-1024x919.png)
+<p float="left">
+    <img src="/assets/2021/05/Bildschirmfoto-2021-05-05-um-23.03.26-1024x675.png" width="30%" height="30%">
+    <img src="/assets/2021/05/Bildschirmfoto-2021-05-05-um-23.03.57-1024x912.png" width="30%" height="30%">
+    <img src="/assets/2021/05/Bildschirmfoto-2021-05-05-um-23.04.31-1024x919.png" width="30%" height="30%">
+</p>
 
 Jetzt nur noch speichern und nach dem drücken sollten die ersten Nachrichten aufm dem Handy eintreffen.
 
