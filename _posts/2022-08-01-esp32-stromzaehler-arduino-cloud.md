@@ -26,7 +26,8 @@ Mit der Hilfe eines ESP32 und eines einfachen IR Moduls kann am Stromzähler der
 **Arduino IoT Cloud Remote App**
 --------------------------------
 
-![Arduino IoT Remote App ]({{ site.baseurl }}/assets/2022/08/IMG_0842.jpg)  
+<!-- ![Arduino IoT Remote App ]({{ site.baseurl }}/assets/2022/08/IMG_0842.jpg) -->
+<img src="/assets/2022/08/IMG_0842.jpg" width="70%" height="70%">
 
 Die Werte sind so niedrig da mein Solarkraftwerk zu dem Zeitpunkt Strom generiert hat.
 
@@ -48,17 +49,21 @@ Die Werte sind so niedrig da mein Solarkraftwerk zu dem Zeitpunkt Strom generier
 
 **Aufbau Gehäuse**
 ------------------
+<!-- ![]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-04-07-um-08.52.16.png)
+![]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-04-07-um-08.52.41.png) -->
 
-![]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-04-07-um-08.52.16.png)
-
-![]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-04-07-um-08.52.41.png)
+<p float="left">
+    <img src="/assets/2022/08/Bildschirmfoto-2022-04-07-um-08.52.16.png" width="50%" height="50%">
+    <img src="/assets/2022/08/Bildschirmfoto-2022-04-07-um-08.52.41.png" width="50%" height="50%">
+</p>
 
 Das neue Zählergehäuse findet man [hier](https://www.tinkercad.com/things/gfMDpMCaC8Z).
 
 **IR Modul TCRT5000 modifikation**
 ----------------------------------
 
-![]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-01-07-um-21.30.02-610x1024.png)
+<!-- ![]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-01-07-um-21.30.02-610x1024.png) --> 
+<img src="/assets/2022/08/Bildschirmfoto-2022-01-07-um-21.30.02-610x1024.png" width="60%" height="60%">
 
 Auf dem TCRT5000 befindet sich eine Lesediode und eine Schreibdiode. Die Schreibdiode wird auch als Näherungssensor verwendet wodurch es zu Problemen kommen kann beim Ablesen des Stromzählers. 
 
@@ -69,7 +74,8 @@ Den TCRT5000 habe ich am ESP32 an die Pins G14, 5V und GND angeschlossen.
 **eHz Elektronischer Haushaltszähler**
 --------------------------------------
 
-![]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-04-08-um-12.13.14-659x1024.png)
+<!-- ![]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-04-08-um-12.13.14-659x1024.png) --> 
+<img src="/assets/2022/08/Bildschirmfoto-2022-04-08-um-12.13.14-659x1024.png" width="50%" height="50%">
 
 Das Gehäuse aus dem 3D Drucker passt beim eHz Elektronischen Haushaltszähler. Mit zwei Magneten wird das Gehäuse am Zähler befestigt da der Stromzähler Eigentum des Netzbetreibers ist! 
 
@@ -78,12 +84,15 @@ Die rechten beiden IR Dioden werden beim IR Lese-Schreibekopf verwendet ([Volksz
 **Zähler Aufsteckmodul ESP32 + TCRT5000**
 -----------------------------------------
 
-![Case<br />
-]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-04-08-um-07.56.57.png)
-
+<!-- ![Case open]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-04-08-um-07.56.57.png)
 ![ESP32 + TCRT5000]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-04-08-um-07.57.09.png)
+![Case closed]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-04-08-um-07.57.25.png) -->
 
-![Case closed]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-04-08-um-07.57.25.png)
+<p float="left">
+    <img src="/assets/2022/08/Bildschirmfoto-2022-04-08-um-07.56.57.png" width="30%" height="30%">
+    <img src="/assets/2022/08/Bildschirmfoto-2022-04-08-um-07.57.09.png" width="30%" height="30%">
+    <img src="/assets/2022/08/Bildschirmfoto-2022-04-08-um-07.57.25.png" width="30%" height="30%">
+</p>
 
 **Einrichten von Arduino IoT Cloud Remote**
 -------------------------------------------
@@ -94,7 +103,9 @@ Nachdem man sich bei Arduino Cloud IoT registriert hat, kann man sich ein neues 
 
 Durch drücken des Add Button kann man eine Variable hinzufügen. In unserem Fall lautet die Variable "Strom". Als Datentyp verwenden wir einen integer number mit der permission Read only. Bei send value geben wir on change (threshold: 0) an. Das ganze sollte dann so aussehen.
 
-![]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-08-01-um-14.41.03-1024x406.png)
+<!-- ![]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-08-01-um-14.41.03-1024x406.png) --> 
+<img src="/assets/2022/08/Bildschirmfoto-2022-08-01-um-14.41.03-1024x406.png" width="70%" height="70%">
+
 
 Die Variable Strom wird im Sketch angegeben und automatisch generiert. Das heißt sie muss im Code nicht extra deklariert werden (kann direkt verwendet werden).
 
@@ -102,7 +113,8 @@ Die Variable Strom wird im Sketch angegeben und automatisch generiert. Das heiß
 
 Damit wir später an der Handy App das Diagramm zu sehen bekommen müssen wir unter Dashboards ein Chart hinzufügen mit dem Button "Add". Hier muss man nur noch die Verlinkung zwischen Chart und der Variable Strom herstellen (rechts außen).
 
-![]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-08-01-um-14.44.48.png)
+<!-- ![]({{ site.baseurl }}/assets/2022/08/Bildschirmfoto-2022-08-01-um-14.44.48.png) -->
+<img src="/assets/2022/08/Bildschirmfoto-2022-08-01-um-14.44.48.png" width="70%" height="70%">
 
 **Code (Sketch)**
 -----------------
@@ -213,3 +225,4 @@ Damit wir später an der Handy App das Diagramm zu sehen bekommen müssen wir un
 ------------------------
 
 ![]({{ site.baseurl }}/assets/2022/08/IMG_0842.jpg)
+<img src="/assets/2022/08/IMG_0842.jpg" width="70%" height="70%">
