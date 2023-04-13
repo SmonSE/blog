@@ -35,7 +35,7 @@ Wer eine Home Assistant am laufen hat kann sich gerne meine Hassio Lösung ansch
 ----------------------------------------------
 
 <!-- ![]({{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-04-08-um-12.38.45-1024x810.png) -->
-<img src="/assets/2022/04/Bildschirmfoto-2022-04-08-um-12.38.45-1024x810.png" width="60%" height="60%">
+<img src="/assets/2022/04/Bildschirmfoto-2022-04-08-um-12.38.45-1024x810.png" width="70%" height="70%">
 
 
 **Benötigte Hardware**
@@ -65,7 +65,7 @@ Das neue Zählergehäuse findet man [hier](https://www.tinkercad.com/things/gfMD
 ----------------------------------
 
 <!-- ![]({{ site.baseurl }}/assets/2022/04/Bildschirmfoto-2022-01-07-um-21.30.02-610x1024.png) -->
-<img src="Bildschirmfoto-2022-01-07-um-21.30.02-610x1024.png" width="60%" height="60%">
+<img src="/assets/2022/04/Bildschirmfoto-2022-01-07-um-21.30.02-610x1024.png" width="60%" height="60%">
 
 Auf dem TCRT5000 befindet sich eine Lesediode und eine Schreibdiode. Die Schreibdiode wird auch als Näherungssensor verwendet wodurch es zu Problemen kommen kann beim Ablesen des Stromzählers.
 
