@@ -21,12 +21,12 @@ author: Smon
 permalink: "/2022/09/29/gaszahler-auslesen/"
 ---
 
-Mit der Hilfe eines Aqara Tür und Fenster Sensors ( Reed Kontakt Sensor ) kann am Gaszähler ( G4 RF1) über den Internen Magneten der aktuelle Verbrauch abgelesen werden ( 1 Imp = 0.1m³ ). Eingebunden ist das ganze wie bereits beim&nbsp;<a href="https://affengriff.net/2021/10/26/esp8266-stromzahler-auslesen/" target="_blank" rel="noreferrer noopener">digitalen Stromzähler</a>&nbsp;in Home Assistant ( HASSIO ). Dort kann man sich die Verbrauchswerte für die unterschiedliche Zeiten (Tag, Woche, Monat, Jahr) anzeigen lassen.
+Mit der Hilfe eines Aqara Tür und Fenster Sensors ( Reed Kontakt Sensor ) kann am Gaszähler ( G4 RF1) über den Internen Magneten der aktuelle Verbrauch abgelesen werden ( 1 Imp = 0.1m³ ). Eingebunden ist das ganze wie bereits beim&nbsp;<a href="https://elesie.de/2021/10/26/esp8266-stromzahler-auslesen/" target="_blank" rel="noreferrer noopener">digitalen Stromzähler</a>&nbsp;in Home Assistant ( HASSIO ). Dort kann man sich die Verbrauchswerte für die unterschiedliche Zeiten (Tag, Woche, Monat, Jahr) anzeigen lassen.
 
 ## Benötigte Hardware
 
 * <a href="https://www.amazon.de/Aqara-MCCGQ11LM-Window-Sensor-Fensterssensor/dp/B07D37VDM3" target="_blank" rel="noreferrer noopener">Aqara Tür- und Fenstersensor</a>
-* <a href="https://affengriff.net/category/3d-prints/" target="_blank" rel="noreferrer noopener">3D Drucker&nbsp;</a>
+* <a href="http://elesie.de/2022/03/21/3d-prints-tinkercad/" target="_blank" rel="noreferrer noopener">3D Drucker&nbsp;</a>
 * Gaszähler G4 RF1
 * Zigbee USB Stick (ConBee2 oder SkyConnect)
 
