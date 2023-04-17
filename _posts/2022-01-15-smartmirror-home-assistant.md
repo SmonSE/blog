@@ -1,6 +1,6 @@
 --- 
 layout: post 
-title: SmartMirror - Home Assistant 
+title: HASSIO - SmartMirror 
 date: 2022-01-15 22:28:22.000000000 +01:00 
 type: post 
 parent_id: '0' 

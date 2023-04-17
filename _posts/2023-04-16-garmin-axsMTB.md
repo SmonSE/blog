@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GARMIN APP - axsMTB SRAM Schaltung auslesen
+title: GARMIN APP - axsMTB SRAM
 date: 2023-04-16 20:10:54.000000000 +02:00
 type: post
 parent_id: '0'

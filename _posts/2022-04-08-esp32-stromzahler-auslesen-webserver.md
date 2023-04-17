@@ -1,6 +1,6 @@
 --- 
 layout: post 
-title: ESP32 - Digitaler Stromzähler auslesen WebServer 
+title: HASSIO - Digitaler Stromzähler auslesen WebServer 
 date: 2022-04-08 12:42:59.000000000 +02:00 
 type: post 
 parent_id: '0' 

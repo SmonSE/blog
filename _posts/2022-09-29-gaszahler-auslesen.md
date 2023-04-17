@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gaszähler G4 RF1 auslesen mit Aqara Sensor
+title: HASSIO - Gaszähler G4 RF1 auslesen mit Aqara Sensor
 date: 2022-09-29 22:10:54.000000000 +02:00
 type: post
 parent_id: '0'

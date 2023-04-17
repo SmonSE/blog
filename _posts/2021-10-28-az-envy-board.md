@@ -1,6 +1,6 @@
 --- 
 layout: post 
-title: AZ-Envy Dev Board with ESP8266 
+title: HASSIO - AZ-Envy Dev Board with ESP8266 
 date: 2021-10-28 14:40:59.000000000 +02:00 
 type: post
 published: true 

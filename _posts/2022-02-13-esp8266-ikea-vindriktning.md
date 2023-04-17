@@ -1,6 +1,6 @@
 --- 
 layout: post 
-title: ESP8266 - IKEA VINDRIKTNING Luftqualitätssensor 
+title: HASSIO - IKEA VINDRIKTNING Luftqualitätssensor 
 date: 2022-02-13 22:07:06.000000000 +01:00 
 type: post 
 parent_id: '0' 

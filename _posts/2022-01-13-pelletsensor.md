@@ -1,6 +1,6 @@
 --- 
 layout: post 
-title: Pelletsensor - Füllstandsanzeige mit ESP8266 & Ultraschallsensor 
+title: HASSIO - Pellet Füllstandsanzeige mit ESP8266 & Ultraschallsensor 
 date: 2022-01-13 12:41:14.000000000 +01:00 
 type: post 
 parent_id: '0' 

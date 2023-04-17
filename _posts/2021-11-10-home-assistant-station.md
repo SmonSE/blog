@@ -1,6 +1,6 @@
 --- 
 layout: post 
-title: Super smart Home Assistant touch display station on Pi3 
+title: HASSIO - Touch display station on Pi3 
 date: 2021-11-10 21:11:55.000000000 +01:00 
 type: post 
 parent_id: '0' 

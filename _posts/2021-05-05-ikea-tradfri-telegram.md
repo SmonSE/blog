@@ -1,6 +1,6 @@
 --- 
 layout: post 
-title: IKEA TRÅDFRI Shortcut Button - Telegram Alarm 
+title: HASSIO - IKEA TRÅDFRI Shortcut Button - Telegram Alarm 
 date: 2021-05-05 23:41:39.000000000 +02:00 
 type: post 
 parent_id: '0' 
