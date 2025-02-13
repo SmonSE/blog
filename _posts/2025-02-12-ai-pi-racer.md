@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AiPiRacer - AI-driven Raspberry Pi racecar
+title: AiPiRacer - AI-Trainiertes Raspberry Pi Racecar Bug
 date: 2025-02-12 15:10:54.000000000 +02:00
 type: post
 parent_id: '0'
@@ -22,8 +22,6 @@ tags:
 author: Smon
 permalink: "/2025/02/12/AiPiRacer/"
 ---
-
-# Ai-Pi-Racer-Bug – AI-Trainiertes Raspberry Pi Racecar Bug
 
 <img src="/assets/2025/02/aipiracer_02.png" width="40%" height="40%">
 
