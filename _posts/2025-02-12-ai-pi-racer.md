@@ -29,7 +29,6 @@ permalink: "/2025/02/12/AiPiRacer/"
   <img src="/assets/2025/02/aipiracer_01.png" width="45%" />
 </p>
 
-<img src="" width="50%" height="50%">
 
 ## Einleitung
 Der **Ai-Pi-Racer-Bug** ist ein KI-gesteuertes Rennauto, das mit einem Raspberry Pi betrieben wird. In diesem Guide erfährst du, wie du dein Raspberry Pi OS 64 Lite vorbereitest und **DonkeyCar** installierst, um dein AI-Racecar zum Laufen zu bringen.
