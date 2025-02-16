@@ -9,7 +9,8 @@ password: ''
 status: publish
 categories:
   - AI
-  - Raspberry Pi
+  - DonkeyCar
+  - Raspberry Pi 4
   - RC Car
 tags:
   - AI
