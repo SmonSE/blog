@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AiPiRacer - AI-Trainiertes Raspberry Pi Racecar Bug
+title: AiPiRacer - AI-Trainiertes Raspberry Pi Racecar
 date: 2025-02-12 15:10:54.000000000 +02:00
 type: post
 parent_id: '0'
