@@ -25,7 +25,7 @@ permalink: "/2025/02/12/AiPiRacer/"
 ---
 
 <p align="center">
-  <img src="/assets/2025/02/aipiracer_02.pngg" width="45%" />
+  <img src="/assets/2025/02/aipiracer_02.png" width="45%" />
   <img src="/assets/2025/02/aipiracer_01.png" width="45%" />
 </p>
 
