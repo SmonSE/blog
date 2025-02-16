@@ -22,12 +22,12 @@ tags:
   - DonkeyCar
   - google colab
 author: Smon
-permalink: "/2025/02/12/AiPiRacer/"
+permalink: "/2025/02/16/AiPiRacerColab/"
 ---
 
-# Ai-Pi-Racer mit Google Colab trainieren
+## Ai-Pi-Racer mit Google Colab trainieren
 
-## Einleitung
+# Einleitung
 
 Der **Ai-Pi-Racer** nutzt ein **neuronales Netz**, um selbstständig auf einer Rennstrecke zu fahren. Damit das Fahrzeug lernen kann, sich effizient zu bewegen, muss es zunächst mit Trainingsdaten versorgt und anschließend ein Modell trainiert werden.
 
@@ -39,8 +39,6 @@ Mit **Google Colab** kannst du:
 ✅ Direkt mit TensorFlow, PyTorch und anderen Machine-Learning-Frameworks arbeiten.  
 ✅ Dein neuronales Netz iterativ verbessern und verschiedene Architekturen testen.  
 
-> **🔗 Google Colab aufrufen:** [Google Colab](https://colab.research.google.com/)  
-
 ---
 
 ## Google Colab Notebook für den Ai-Pi-Racer
@@ -48,11 +46,10 @@ Mit **Google Colab** kannst du:
 Ich habe ein Google Colab Notebook erstellt, mit dem du direkt dein Modell für den **Ai-Pi-Racer** trainieren kannst.  
 Klicke auf den folgenden Link, um das Notebook zu öffnen und es in deinem eigenen Google Drive zu speichern:
 
-> **📌 Mein Google Colab Notebook:** [Hier klicken](https://colab.research.google.com/drive/1w5oP6nInVgHqcRKXCCZjzD_msqsTfMtU?usp=sharing)  
+> **🔗 Mein Google Colab Notebook:** [Hier klicken](https://colab.research.google.com/drive/1w5oP6nInVgHqcRKXCCZjzD_msqsTfMtU?usp=sharing)  
 
 **Hinweis:** Du kannst das Notebook in deinem Google Drive speichern und deine eigenen Trainingsdaten verwenden.
 
----
 
 1. **GPU-Laufzeit aktivieren:**  
    - Gehe zu **"Laufzeit" → "Laufzeittyp ändern"**  
@@ -67,10 +64,9 @@ Klicke auf den folgenden Link, um das Notebook zu öffnen und es in deinem eigen
    - Du kannst aus deiner Session ein **Video schneiden** und anschließend downloaden.
    - Dies ist hilfreich für die spätere Analyse deines Trainingsprozesses.
 
----
-
 🎉 **Viel Spaß beim Ausprobieren und Trainieren deines Ai-Pi-Racers!** 🚗💨
 
+---
 
 # Auswertung meines letzten Trainingsverlaufs 
 
