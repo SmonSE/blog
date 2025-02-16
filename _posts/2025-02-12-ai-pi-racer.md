@@ -122,6 +122,51 @@ pip install pynput
 
 ---
 
+## Stop recording Knopf in `manage.py`
+```python
+import os
+import signal
+import subprocess
+import pigpio
+import donkeycar as dk
+
+# Initialize DonkeyCar
+car = dk.vehicle.Vehicle()
+
+# Define the name of the process (e.g., DonkeyCar)
+process_name = "manage.py"  # Replace with the actual process name (e.g., "manage.py" for DonkeyCar)
+
+BUTTON_GPIO = 22
+
+# Initialize pigpio
+pi = pigpio.pi()
+if not pi.connected:
+    exit()
+
+# Callback function to stop recording or perform actions
+def button_pressed_callback(gpio, level, tick):
+    print("Button pressed! Stopping recording...")
+    try:
+        pid = int(subprocess.check_output(["pgrep", "-f", process_name]).strip())
+        print(f"Found process {process_name} with PID {pid}")
+        
+        # SIGINT = Simulate Ctrl+C 
+        os.kill(pid, signal.SIGINT)
+        print(f"Sent SIGINT to process {process_name} with PID {pid}")
+
+    except subprocess.CalledProcessError:
+        print(f"No running process found with name {process_name}")
+
+# Set up the GPIO pin mode
+pi.set_mode(BUTTON_GPIO, pigpio.INPUT)
+pi.set_pull_up_down(BUTTON_GPIO, pigpio.PUD_UP)
+
+# Set up the button press detection
+pi.callback(BUTTON_GPIO, pigpio.FALLING_EDGE, button_pressed_callback)
+```
+
+---
+
 ## DonkeyCar starten
 ```sh
 cd ~/myCar
