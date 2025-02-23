@@ -74,7 +74,7 @@ sudo apt-get install libcamera-dev libcamera-apps python3-picamera2
 
 ### Virtuelle Umgebung (VENV) erstellen
 ```sh
-python3 -m virtualenv -p python3 env --system-site-packages
+python3 -m venv env --system-site-packages
 ```
 Automatische Aktivierung der Umgebung:
 ```sh
@@ -90,6 +90,11 @@ sudo apt install libcap-dev libhdf5-dev libhdf5-serial-dev
 ### DonkeyCar installieren
 ```sh
 pip install donkeycar[pi]
+```
+
+### Raspi-Config
+```sh
+sudo raspi-config
 ```
 
 ### I2C Unterstützung einrichten
