@@ -132,14 +132,9 @@ pip install pynput
 
 ## Stop recording Knopf in `manage.py`
 ```python
-import os
-import signal
-import subprocess
+import RPi.GPIO as GPIO
 import pigpio
-import donkeycar as dk
-
-# Initialize DonkeyCar
-car = dk.vehicle.Vehicle()
+import time
 
 # Define the name of the process (e.g., DonkeyCar)
 process_name = "manage.py"  # Replace with the actual process name (e.g., "manage.py" for DonkeyCar)
@@ -174,35 +169,16 @@ pi.callback(BUTTON_GPIO, pigpio.FALLING_EDGE, button_pressed_callback)
 ```
 
 
-## Create a systemd service:
+## Add pigpiod to .bashrc:
 ```sh
-sudo nano /etc/systemd/system/pigpiod.service
+echo "sudo pigpiod" >> ~/.bashrc
 ```
 
 
-## Add the following content:
+## Then, reload:
 ```sh
-[Unit]
-Description=Start pigpio daemon
-After=network.target
-
-[Service]
-ExecStart=/usr/bin/pigpiod
-ExecStop=/bin/systemctl stop pigpiod
-Restart=always
-User=root
-
-[Install]
-WantedBy=multi-user.target
+source ~/.bashrc
 ```
-
-
-## Enable and start the service:
-```sh
-sudo systemctl enable pigpiod
-sudo systemctl start pigpiod
-```
-
 
 ## Check if it's running:
 ```sh
