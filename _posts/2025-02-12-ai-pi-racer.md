@@ -173,6 +173,42 @@ pi.set_pull_up_down(BUTTON_GPIO, pigpio.PUD_UP)
 pi.callback(BUTTON_GPIO, pigpio.FALLING_EDGE, button_pressed_callback)
 ```
 
+
+## Create a systemd service:
+```sh
+sudo nano /etc/systemd/system/pigpiod.service
+```
+
+
+## Add the following content:
+```sh
+[Unit]
+Description=Start pigpio daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/pigpiod
+ExecStop=/bin/systemctl stop pigpiod
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
+```
+
+
+## Enable and start the service:
+```sh
+sudo systemctl enable pigpiod
+sudo systemctl start pigpiod
+```
+
+
+## Check if it's running:
+```sh
+systemctl status pigpiod
+```
+
 ---
 
 ## DonkeyCar starten
