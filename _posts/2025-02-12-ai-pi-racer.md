@@ -181,6 +181,34 @@ cd ~/myCar
 python manage.py drive
 ```
 
+
+
+## Einfaches start.py-Skript, das den Befehl python manage.py drive ausführt:
+```python
+#!/usr/bin/env python3
+import subprocess
+
+def main():
+    # Führt den Befehl "python manage.py drive" aus
+    subprocess.run(["python", "manage.py", "drive"])
+
+if __name__ == '__main__':
+    main()
+```
+
+## Einfaches ai-start.py-Skript, das den Racer mit dem ai model ausführt:
+```python
+#!/usr/bin/env python3
+import subprocess
+
+def main():
+    # Führt den Befehl "python manage.py drive --type tflite_linear --model models/model1.tflite" aus
+    subprocess.run(["python", "manage.py", "drive", "--type", "tflite_linear", "--model", "models/model1.tflite"])
+
+if __name__ == '__main__':
+    main()
+```
+
 ---
 
 ## Fazit
