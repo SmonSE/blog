@@ -26,7 +26,7 @@ permalink: "/2025/03/10/GpsPiRacer/"
 ---
 
 <p align="center">
-  <img src="/assets/2025/03/gpspiracer_01.png" height="200" />
+  <img src="/assets/2025/03/gpspiracer_01.png" height="300" />
 </p>
 
 
@@ -98,7 +98,7 @@ python3 create_graph.py
 ```
 
 <p align="center">
-  <img src="/assets/2025/03/gpspiracer_02.png" height="200" />
+  <img src="/assets/2025/03/gpspiracer_02.png" height="300" />
 </p>
 
 ---
